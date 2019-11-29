@@ -2,15 +2,14 @@
 <html lang="en">
 <head>
     <?php include 'header.php';?>
-    <title>Document</title>
+    <title>Mariam Khalifa</title>
 </head>
 <body>
-    
-
-
-
-
-<h1>Mariam Khalifa</h1>
+<h1 class="hidden">Mariam Khalifa</h1>
+<header id="main-header" class="d-flex flex-column">
+    <i class="fas fa-bars fa-3x mr-1 ml-auto"></i>
+    <a href="index.php" class="mx-auto mt-4 container-fluid"><img class="logo img-fluid mx-auto w-80" src="images/logo.svg" alt="logo"></a>
+</header>
 
 <?php
 //include database and object files

@@ -1,0 +1,26 @@
+@import "_vars";
+@import "modules/_header";
+
+img, embed, object, video {
+    max-width: 100%;
+}
+
+body {
+    font-family: $font;
+}
+
+h1, h2, h3, h4 {
+    color: $purple;
+}
+
+p {
+    color: $grey;
+}
+
+a {
+    font-family: $font; 
+}
+
+.hidden {
+    display: none;
+}
