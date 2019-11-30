@@ -7,7 +7,7 @@ let burger = document.querySelector('.fa-bars'),
     linkDev = document.querySelector('#link-dev');
 
 if (mediaQuery1.matches) {
-    console.log('helloe');
+    //console.log('helloe');
     mainNav.classList.remove('visible');
 }
 
