@@ -29,47 +29,29 @@
     <!-- <img class="hero" src="images/butterflies.png" alt="butterflies"> -->
 </header>
 
-<?php
-//include database and object files
-// include_once './config/database.php';
-// include_once './objects/project.php';
-
-// // instantiate database and movie object
-// $database = new Database();
-// $db = $database->getConnection();
-// $project = new Project($db);
-// $stmt = $project->getProjects();
-
-
-// $num = $stmt->rowCount();
-
-// if($num>0):?>
-
-    <?php //while($row = $stmt->fetch(PDO::FETCH_ASSOC)):?>
-<!-- <div>
-        <h2><?php //echo $row['Name'];?></h2>
-        <img src="<?php //echo $row['main_image'];?>" alt="project image"> 
-        <a href="portfolio_project.php?id=<?php //echo $row['ID'];?>">Detail</a>
-</div> -->
-    <?php //endwhile;
-
-
-    
-    //else:?>
-  <!-- <h1>No Project</h1> -->
-    <?php //endif;?>
-
 <section id="development">
 <h1>Web Development Projects</h1>
 <div class="dev-projects">
-    <img class="project" src="public/images/animal-tracks-logo.png" alt="animal tracks">
-    <img class="project" src="public/images/traa-logo.png" alt="animal tracks">
-    <img class="project" src="public/images/red-fox-logo.png" alt="animal tracks">
-    <img class="project" src="public/images/imagina-logo.png" alt="animal tracks">
+    <a href="portfolio_project.php?id=1">
+        <img class="project" data-target="1" src="public/images/animal-tracks-logo.png" alt="animal tracks logo">
+    </a>
+    <a href="portfolio_project.php?id=2">
+        <img class="project" data-target="2" src="public/images/traa-logo.png" alt="traa logo">
+    </a>
+    <a href="portfolio_project.php?id=3">
+    <img class="project" data-target="3" src="public/images/red-fox-logo.png" alt="red fox logo">
+    </a>
+    <a href="portfolio_project.php?id=4">
+        <img class="project" data-target="4" src="public/images/imagina-logo.png" alt="imagina logo">
+    </a>
 </div>
 <div class="dev-projects">
-    <img class="project" src="public/images/irobot-logo.png" alt="animal tracks">
-    <img class="project" src="public/images/fav-things-logo.png" alt="animal tracks">
+    <a href="portfolio_project.php?id=5">
+        <img class="project" data-target="5" src="public/images/irobot-logo.png" alt="irobot logo">
+    </a>
+    <a href="portfolio_project.php?id=6">
+        <img class="project" data-target="6" src="public/images/fav-things-logo.png" alt="favourite things logo">
+    </a>
 </div>
 </section>
 

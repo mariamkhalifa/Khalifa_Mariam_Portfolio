@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <?php include 'header.php';?>
-    <title>Project\</title>
+    <title>Projects\</title>
 </head>
 <body>
 <h1>Portfolio Project</h1>
@@ -16,6 +16,8 @@ include_once './objects/project.php';
 $database = new Database();
 $db = $database->getConnection();
 $project = new Project($db);
+$stmt = $project->getProjects();
+
 if(isset($_GET['id'])) {
     $stmt = $project->getProjectByID($_GET['id']);
 }
