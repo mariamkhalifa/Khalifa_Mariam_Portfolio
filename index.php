@@ -2,15 +2,32 @@
 <html lang="en">
 <head>
     <?php include 'header.php';?>
-    <title>Document</title>
+    <title>Mariam Khalifa</title>
 </head>
 <body>
-    
-
-
-
-
-<h1>Mariam Khalifa</h1>
+<h1 class="hidden">Mariam Khalifa</h1>
+<header id="main-header">
+    <i class="fas fa-bars fa-2x"></i>
+    <ul class="main-nav">
+        <a href="#development"><li>Web Development</li></a>
+        <a href="#design"><li>Motion Design</li></a>
+        <a href="#about"><li>About</li></a>
+        <a href="#contact"><li>Contact</li></a>
+    </ul>
+    <a href="index.php" class="link-home">
+        <picture class="logo">
+            <source media="(min-width: 767px)" srcset="images/logo.svg">
+            <img  src="images/logo-alt.svg" alt="logo">
+        </picture>
+    </a>
+    <ul class="dots">
+        <li class="dot">.</li>
+        <li class="dot">.</li>
+        <li class="dot">.</li>
+    </ul>
+    <i class="fas fa-chevron-down fa-2x"></i>
+    <!-- <img class="hero" src="images/butterflies.png" alt="butterflies"> -->
+</header>
 
 <?php
 //include database and object files

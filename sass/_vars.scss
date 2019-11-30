@@ -1,0 +1,52 @@
+$purple: #3E3A5B;
+$blue: #E6ECFA;
+$grey: #666666;
+$font: 'Manjari', sans-serif;
+
+@mixin column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin m-l-25 {
+    margin-left: 25px !important;
+}
+
+@mixin m-l-40 {
+    margin-left: 40px !important;
+}
+
+@mixin m-l-a {
+    margin-left: auto !important;
+}
+
+@mixin m-r-25 {
+    margin-right: 25px !important;
+}
+
+@mixin m-r-40 {
+    margin-right: 40px !important;
+}
+
+@mixin m-r-a {
+    margin-right: auto !important;
+}
+
+@mixin m-t-40 {
+    margin-top: 40px !important;
+}
+
+@mixin m-t-100 {
+    margin-top: 100px !important;
+}
+
+@mixin rotate-90 {
+    transform:  rotate(90deg);
+    -webkit-transform:  rotate(90deg);
+    -ms-transform:  rotate(90deg);
+}

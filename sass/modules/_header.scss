@@ -1,0 +1,117 @@
+#main-header {
+    height: 100vh;
+    background-image: url(../images/hero-small1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    @include column;
+}
+
+.link-home {
+    width: 100px;
+    @include m-r-a;
+    @include m-l-a;
+    margin-top: 20px;
+}
+
+.logo {
+    width: 100%;
+}
+
+.fa-bars {
+    color: $purple;
+    margin-right: 10px;
+    margin-top: 10px;
+    @include m-l-a;
+    cursor: pointer;
+    transition: all ease 1s;
+}
+
+.rotated {
+    @include rotate-90;
+}
+
+.main-nav {
+    display: none;
+}
+
+.main-nav.visible {
+    @include column;
+    text-align: center;
+    a {
+        color: $purple;
+        transition: all ease 1s;
+        border-bottom: #ccc 1px solid;
+        margin-top: 10px;
+        padding: 5px;
+        width: 60%;
+        @include m-r-a;
+        @include m-l-a;
+    }
+    a:last-child { border-bottom: none; }
+    a:hover { color: #ccc; }
+}
+
+.dots {
+    display: none;
+}
+
+.fa-chevron-down {
+    color: $purple; 
+    @include m-r-a;
+    @include m-l-a;
+    margin-top: 380px;
+}
+
+@media screen and (min-width: 401px) {
+    #main-header {
+        background-image: url(../images/hero-small2.jpg);
+    }
+}
+
+@media screen and (min-width: 513px) {
+    #main-header {
+        background-image: url(../images/hero-medium.jpg);
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .fa-bars {
+        display: none !important;
+    }
+
+    .link-home {
+        width: 150px;
+        @include m-l-25;
+        @include m-r-a;
+        margin-top: 20px;
+    }
+
+    .dots {
+        display: block;
+        @include m-l-a;
+        @include m-r-40;
+        margin-top: 400px;
+        font-size: 2em;
+        li {
+            padding: 0;
+            margin: 0;
+            color: $purple;
+            line-height: .5em;
+        }
+    }
+
+    .fa-chevron-down { 
+        margin-right: 30px !important;
+        @include m-l-a;
+        margin-top: 0;
+        line-height: .5em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #main-header {
+        background-image: url(../images/hero-large.jpg);
+    }
+}

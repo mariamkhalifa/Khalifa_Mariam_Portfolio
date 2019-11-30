@@ -10,7 +10,7 @@
 
 
 
-<h1>Mariam Khalifa</h1>
+<h1 class="invisible">Mariam Khalifa</h1>
 
 <?php
 //include database and object files
@@ -24,7 +24,7 @@ $db = $database->getConnection();
 // var found in objects/movie.php
 $movie = new Project($db);
 if(isset($_GET['id'])) {
-    $stmt = $movie->getProjectByID($_GET['id']);
+    $stmt = $project->getProjectByID($_GET['id']);
 }
 
 $num = $stmt->rowCount();

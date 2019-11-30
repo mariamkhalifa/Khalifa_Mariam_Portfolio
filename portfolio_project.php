@@ -39,7 +39,7 @@ if($num>0):?>
 
     
     else:?>
-  <h1>No movie yet</h1>
+  <h1>No Project</h1>
     <?php endif;?>
 
     <?php include 'footer.php';?>
