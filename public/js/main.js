@@ -1,4 +1,5 @@
 (function (){
+import 'modules/project.js'; 
 // console.log('wrokin');
 let burger = document.querySelector('.fa-bars'),
     mainNav = document.querySelector('.main-nav'),

@@ -2,14 +2,9 @@
 <html lang="en">
 <head>
     <?php include 'header.php';?>
-    <title>Details\</title>
+    <title>Project\</title>
 </head>
 <body>
-    
-
-
-
-
 <h1>Portfolio Project</h1>
 
 <?php
@@ -20,7 +15,7 @@ include_once './objects/project.php';
 // instantiate database and project object
 $database = new Database();
 $db = $database->getConnection();
-$movie = new Project($db);
+$project = new Project($db);
 if(isset($_GET['id'])) {
     $stmt = $project->getProjectByID($_GET['id']);
 }
@@ -28,11 +23,10 @@ if(isset($_GET['id'])) {
 $num = $stmt->rowCount();
 
 if($num>0):?>
-
     <?php while($row = $stmt->fetch(PDO::FETCH_ASSOC)):?>
 <div>
-        <!-- <h2><?php echo $row['movies_title'];?></h2>
-        <h4>Year: <?php echo $row['movies_year'];?></h4> -->
+        <h2><?php echo $row['Name'];?></h2>
+        <img src="<?php echo $row['main_image'];?>" alt="project image">
 </div>
     <?php endwhile;
 
