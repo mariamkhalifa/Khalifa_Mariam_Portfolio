@@ -16,8 +16,8 @@
     </ul>
     <a href="index.php" class="link-home">
         <picture class="logo">
-            <source media="(min-width: 767px)" srcset="images/logo.svg">
-            <img  src="images/logo-alt.svg" alt="logo">
+            <source media="(min-width: 767px)" srcset="public/images/logo.svg">
+            <img  src="public/images/logo-alt.svg" alt="logo">
         </picture>
     </a>
     <ul class="dots">
@@ -31,32 +31,49 @@
 
 <?php
 //include database and object files
-include_once './config/database.php';
-include_once './objects/project.php';
+// include_once './config/database.php';
+// include_once './objects/project.php';
 
-// instantiate database and movie object
-$database = new Database();
-$db = $database->getConnection();
-$project = new Project($db);
-$stmt = $project->getProjects();
+// // instantiate database and movie object
+// $database = new Database();
+// $db = $database->getConnection();
+// $project = new Project($db);
+// $stmt = $project->getProjects();
 
 
-$num = $stmt->rowCount();
+// $num = $stmt->rowCount();
 
-if($num>0):?>
+// if($num>0):?>
 
-    <?php while($row = $stmt->fetch(PDO::FETCH_ASSOC)):?>
-<div>
-        <h2><?php echo $row['Name'];?></h2>
-        <img src="<?php echo $row['main_image'];?>" alt="project image"> 
-        <a href="portfolio_project.php?id=<?php echo $row['ID'];?>">Detail</a>
-</div>
-    <?php endwhile;
+    <?php //while($row = $stmt->fetch(PDO::FETCH_ASSOC)):?>
+<!-- <div>
+        <h2><?php //echo $row['Name'];?></h2>
+        <img src="<?php //echo $row['main_image'];?>" alt="project image"> 
+        <a href="portfolio_project.php?id=<?php //echo $row['ID'];?>">Detail</a>
+</div> -->
+    <?php //endwhile;
 
 
     
-    else:?>
-  <h1>No Project</h1>
-    <?php endif;?>
+    //else:?>
+  <!-- <h1>No Project</h1> -->
+    <?php //endif;?>
 
-    <?php include 'footer.php';?>
+<section id="development">
+<h1>Web Development Projects</h1>
+<div class="dev-projects">
+    <img class="project" src="public/images/animal-tracks-logo.png" alt="animal tracks">
+    <img class="project" src="public/images/traa-logo.png" alt="animal tracks">
+    <img class="project" src="public/images/red-fox-logo.png" alt="animal tracks">
+    <img class="project" src="public/images/imagina-logo.png" alt="animal tracks">
+</div>
+<div class="dev-projects">
+    <img class="project" src="public/images/irobot-logo.png" alt="animal tracks">
+    <img class="project" src="public/images/fav-things-logo.png" alt="animal tracks">
+</div>
+</section>
+
+
+<?php include 'footer.php';?>
+
+
