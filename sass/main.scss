@@ -1,5 +1,6 @@
 @import "_vars";
 @import "modules/_header";
+@import "modules/_development";
 
 img, embed, object, video {
     max-width: 100%;
@@ -17,6 +18,12 @@ body {
 
 h1, h2, h3, h4 {
     color: $purple;
+}
+
+h1 {
+    font-size: 1.75em;
+    text-align: center;
+    @include m-t-80;
 }
 
 p {

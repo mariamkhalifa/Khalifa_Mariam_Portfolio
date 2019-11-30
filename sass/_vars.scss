@@ -9,8 +9,8 @@ $font: 'Manjari', sans-serif;
 }
 
 @mixin row {
-    display: flex;
-    flex-direction: row;
+    display: flex !important;
+    flex-direction: row !important;
 }
 
 @mixin m-l-25 {
@@ -37,8 +37,8 @@ $font: 'Manjari', sans-serif;
     margin-right: auto !important;
 }
 
-@mixin m-t-40 {
-    margin-top: 40px !important;
+@mixin m-t-80 {
+    margin-top: 80px !important;
 }
 
 @mixin m-t-100 {
