@@ -6,17 +6,22 @@
         @include column;
         align-items: center;
     }
-    .project {
-        cursor: pointer;
+    a { 
+        @include m-r-a;
+        @include m-l-a;
         width: 60%;
-        max-width: 100%;
-        margin-top: 20px;
         padding: 30px;
         transition: all ease .5s; 
     }
-    .project:hover {
+    a:hover {
         border: 7px $blue solid;
         animation: wiggle-anim 1s; 
+    }
+    .project {
+        cursor: pointer;
+        //width: 100%;
+        max-width: 100%;
+        margin-top: 20px;
     }
 }
 

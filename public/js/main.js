@@ -1,3 +1,5 @@
+ import './modules/project.js'; 
+
 (function (){
 // console.log('wrokin');
 let burger = document.querySelector('.fa-bars'),
@@ -7,7 +9,7 @@ let burger = document.querySelector('.fa-bars'),
     linkDev = document.querySelector('#link-dev');
 
 if (mediaQuery1.matches) {
-    console.log('helloe');
+    //console.log('hello');
     mainNav.classList.remove('visible');
 }
 
