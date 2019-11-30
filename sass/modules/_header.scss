@@ -59,9 +59,10 @@
 
 .fa-chevron-down {
     color: $purple; 
-    @include m-r-a;
-    @include m-l-a;
-    margin-top: 380px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    right: 50%;
 }
 
 @media screen and (min-width: 401px) {
@@ -78,21 +79,32 @@
 
 @media screen and (min-width: 767px) {
     .fa-bars {
-        display: none !important;
+        margin-top: 10px;
+        margin-right: 20px;
     }
 
     .link-home {
+        position: absolute;
+        top: 20px;
+        left: 20px;
         width: 150px;
-        @include m-l-25;
-        @include m-r-a;
-        margin-top: 20px;
+        margin-top: 0;
+    }
+
+    .main-nav.visible {
+        position: relative;
+        @include m-r-25;
+        @include m-l-a;
+        text-align: right;
+        margin-top: 10px;
+        a { width: 100%; }
     }
 
     .dots {
         display: block;
-        @include m-l-a;
-        @include m-r-40;
-        margin-top: 400px;
+        position: absolute;
+        bottom: 40px;
+        right: 40px;
         font-size: 2em;
         li {
             padding: 0;
@@ -103,9 +115,10 @@
     }
 
     .fa-chevron-down { 
-        margin-right: 30px !important;
-        @include m-l-a;
-        margin-top: 0;
+        position: absolute;
+        bottom: 10px;
+        right: 30px;
+        left: auto;
         line-height: .5em;
     }
 }
@@ -113,5 +126,23 @@
 @media screen and (min-width: 1024px) {
     #main-header {
         background-image: url(../images/hero-large.jpg);
+    }
+
+    .fa-bars {
+        display: none !important;
+    }
+
+    .main-nav {
+        display: block;
+        text-align: right;
+        position: fixed;
+        top: 20px;
+        right: 25px;
+        a { 
+            color: $purple; 
+            transition: all ease .5s;
+        }
+        a:hover { color: #ccc; }
+        li { padding: 3px 0}
     }
 }

@@ -6,3 +6,5 @@
 <link href="https://fonts.googleapis.com/css?family=Merienda+One&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="public/css/main.css">
 <script src="https://kit.fontawesome.com/cfa5b23a00.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/ScrollToPlugin.min.js"></script>
