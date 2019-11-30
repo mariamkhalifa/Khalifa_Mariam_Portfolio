@@ -6,9 +6,27 @@
 </head>
 <body>
 <h1 class="hidden">Mariam Khalifa</h1>
-<header id="main-header" class="d-flex flex-column">
-    <i class="fas fa-bars fa-3x mr-1 ml-auto"></i>
-    <a href="index.php" class="mx-auto mt-4 container-fluid"><img class="logo img-fluid mx-auto w-80" src="images/logo.svg" alt="logo"></a>
+<header id="main-header">
+    <i class="fas fa-bars fa-2x"></i>
+    <ul class="main-nav">
+        <a href="#development"><li>Web Development</li></a>
+        <a href="#design"><li>Motion Design</li></a>
+        <a href="#about"><li>About</li></a>
+        <a href="#contact"><li>Contact</li></a>
+    </ul>
+    <a href="index.php" class="link-home">
+        <picture class="logo">
+            <source media="(min-width: 767px)" srcset="images/logo.svg">
+            <img  src="images/logo-alt.svg" alt="logo">
+        </picture>
+    </a>
+    <ul class="dots">
+        <li class="dot">.</li>
+        <li class="dot">.</li>
+        <li class="dot">.</li>
+    </ul>
+    <i class="fas fa-chevron-down fa-2x"></i>
+    <!-- <img class="hero" src="images/butterflies.png" alt="butterflies"> -->
 </header>
 
 <?php

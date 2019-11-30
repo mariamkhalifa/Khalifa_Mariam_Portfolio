@@ -5,6 +5,12 @@ img, embed, object, video {
     max-width: 100%;
 }
 
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: $font;
 }
@@ -19,8 +25,19 @@ p {
 
 a {
     font-family: $font; 
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: $grey;
+}
+
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .hidden {
     display: none;
 }
+
