@@ -1,4 +1,4 @@
- import './modules/project.js'; 
+import './modules/project.js'; 
 
 (function (){
 // console.log('wrokin');
@@ -34,5 +34,6 @@ function scrollToDevelopment(e){
 
 burger.addEventListener('click', expandNav);
 linkDev.addEventListener('click', scrollToDevelopment);
+
 
 })();

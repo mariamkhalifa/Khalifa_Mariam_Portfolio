@@ -1,6 +1,7 @@
 @import "_vars";
 @import "modules/_header";
 @import "modules/_development";
+@import "modules/_project";
 
 
 img, embed, object, video {
@@ -27,8 +28,14 @@ h1 {
     @include m-t-80;
 }
 
+h2 {
+    font-size: 1.25em;
+}
+
 p {
     color: $grey;
+    line-height: 1.5em;
+    font-size: 0.9em;
 }
 
 a {

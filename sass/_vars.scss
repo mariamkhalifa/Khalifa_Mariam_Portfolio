@@ -1,6 +1,6 @@
 $purple: #3E3A5B;
 $blue: #E6ECFA;
-$grey: #666666;
+$grey: #494050;
 $font: 'Manjari', sans-serif;
 
 @mixin column {
@@ -35,6 +35,10 @@ $font: 'Manjari', sans-serif;
 
 @mixin m-r-a {
     margin-right: auto !important;
+}
+
+@mixin m-t-40 {
+    margin-top: 40px !important;
 }
 
 @mixin m-t-80 {
