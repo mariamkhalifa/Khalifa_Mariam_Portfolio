@@ -1,0 +1,116 @@
+#project-header {
+    @include column;
+    background-color: $blue;
+    height: 25vh;
+    .link-home {
+        width: 100px;
+        @include m-r-a;
+        @include m-l-a;
+        margin-top: 20px;
+    }
+    
+    .logo {
+        width: 100%;
+    }
+}
+
+.project-con {
+    h1 { padding: 0 50px; }
+}
+
+.dt-img-con {
+    height: 500px;
+    overflow-y: scroll;
+    @include m-t-40;
+    @include m-r-25;
+    @include m-l-25;
+}
+
+.desc {
+    @include m-r-25;
+    @include m-l-25;
+    h2 {
+        @include m-t-80;
+    }
+    span { 
+        color: #666666;
+        font-size: 0.85em; 
+    }
+}
+
+.m-img {
+    @include m-r-a;
+    @include m-l-a;
+    @include m-t-80;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr;
+    img { 
+        width: 50%; 
+        @include m-r-a;
+        @include m-l-a; 
+    }
+    img:last-child { @include m-t-40; }
+}
+
+@media screen and (min-width: 767px) {
+    #project-header {
+        height: 80px;
+        .link-home {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            margin: 0;
+        }
+    }
+    
+    .project-con {
+        @include m-r-25;
+        @include m-l-25;
+    }
+
+    .m-img {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        img { width: 80%; }
+        img:last-child {
+            margin-top: 0 !important;
+            @include m-l-40;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .project-con {
+        display: grid !important;
+        grid-template-areas: "h1 h1"
+                             "dt-img desc"
+                             "m-img m-img";
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 100px 500px auto;
+        grid-gap: 40px;
+        h1 {
+            grid-area: h1;
+            @include m-t-100;
+        }
+        .dt-img-con {
+            grid-area: dt-img;
+            margin-top: 50px !important;
+        }
+        .desc {
+            grid-area: desc;
+            margin-top: 0 !important;
+            h2 { margin-top: 50px !important; }
+        }
+        .m-img {
+            grid-area: m-img;
+            display: flex;
+            justify-content: center;
+            img { 
+                width: 25%;
+                height: auto; 
+            }
+        }
+    }
+
+}
