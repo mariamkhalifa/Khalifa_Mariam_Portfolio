@@ -1,0 +1,104 @@
+#about {
+    @include column;
+    align-items: center;
+    @include m-r-25;
+    @include m-l-25;
+    img {
+        max-width: 80%;
+    }
+    span {
+        font-size: 1.25em;
+        line-height: 1.5em;
+    }
+    p {
+        padding: 0 20px 20px 20px;
+        max-width: 80%;
+    }
+}
+
+.skills-con {
+    background-color: $blue;
+    @include m-t-40;
+    padding: 40px 25px;
+}
+
+.skills {
+    width: 220px;
+    @include m-l-a;
+    @include m-r-a;
+    ul { 
+        padding-left: 30px; 
+    }
+}
+
+.fa-square {
+    font-size: .5em;
+    margin-right: 8px;
+    color: $grey;
+}
+
+.skills-dev {
+    @include m-t-40;
+}
+
+.skills-g {
+    @include m-t-40;
+}
+
+@media screen and (min-width: 767px) {
+    #about {
+        display: grid;
+        grid-template-areas: "h1 h1"
+                             "p img";
+        grid-gap: 40px;
+    }
+    #about h1 {
+        grid-area: h1;
+        text-align: center;
+    }
+    #about p {
+        grid-area: p;
+        padding: 0;
+        margin-left: auto;
+    }
+    #about img {
+        grid-area: img;
+        //max-width: 100%;
+        margin-right: auto;
+    }
+    .skills-con {
+        //display: grid;
+        //grid-template-columns: repeat(3, 1fr);
+        display: flex;
+        justify-content: space-between;
+    }
+    .skills {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+        width: auto;
+        ul { padding-left: 20px;} 
+    }
+    .skills-dev { 
+        margin-top: 0 !important;
+        display: grid;
+        grid-template-areas: "h4 h4"
+                             "ul1 ul2";
+        h4 { 
+            grid-area: h4;
+            text-align: center;
+        }
+        .skills-dev:nth-child(2) { grid-area: ul1; } 
+        .skills-dev:last-child { grid-area: ul2; }
+    }
+    .skills-g { margin-top: 0 !important;}
+}
+
+@media screen and (min-width: 1023px) {
+    #about p {
+        padding-right: 60px;
+    }
+    .skills-con  {
+        @include m-t-80;
+        justify-content: space-evenly;
+    }
+}
