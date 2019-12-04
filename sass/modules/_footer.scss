@@ -27,3 +27,11 @@
     bottom: 100px;
     right: 20px;
 }
+
+@media screen and (min-width: 767px) {
+    #footer {
+        @include row;
+        justify-content: space-between;
+        padding: 15px 25px;
+    }
+}
