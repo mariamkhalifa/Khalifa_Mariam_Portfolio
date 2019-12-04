@@ -3,6 +3,7 @@
 @import "modules/_development";
 @import "modules/_project";
 @import "modules/_about";
+@import "modules/_contact";
 
 
 img, embed, object, video {
@@ -60,3 +61,14 @@ ul, li {
     display: none;
 }
 
+@media screen and (min-width:767px) {
+    h1 { 
+        font-size: 2em;
+    }
+}
+
+@media screen and (min-width:1023px) {
+    h1 { 
+        font-size: 2.25em;
+    }
+}

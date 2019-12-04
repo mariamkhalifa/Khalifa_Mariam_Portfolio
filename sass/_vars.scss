@@ -54,3 +54,9 @@ $font: 'Manjari', sans-serif;
     -webkit-transform:  rotate(90deg);
     -ms-transform:  rotate(90deg);
 }
+
+@mixin flip-vertical {
+    -webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
