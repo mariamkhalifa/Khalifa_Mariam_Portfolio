@@ -43,7 +43,6 @@
 
 @media screen and (min-width:1023px) {
     #development {
-        @include m-t-80;
         h1 { 
             font-size: 2.25em;
         }

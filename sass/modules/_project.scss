@@ -55,12 +55,13 @@
 
 @media screen and (min-width: 767px) {
     #project-header {
-        height: 80px;
+        height: 100px;
         .link-home {
             position: absolute;
             top: 20px;
             left: 20px;
-            margin: 0;
+            width: 150px;
+            margin-top: 0;
         }
     }
     

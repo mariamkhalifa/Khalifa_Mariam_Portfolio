@@ -26,8 +26,52 @@
         <li class="dot">.</li>
     </ul>
     <i class="fas fa-chevron-down fa-2x"></i>
-    <!-- <img class="hero" src="images/butterflies.png" alt="butterflies"> -->
 </header>
+
+<section id="about">
+<h1>A little bit about me..</h1>
+<p class="about-text"><span>Hi there!</span><br>I’m a 2nd year interactive media design student at Fanshawe College, London, Ontario. I'm to graduate next April/2020.
+I love to create and I love to tell stories that evoke powerful emotions. That’s why I chose this career.
+My style is simplicity paired with functionality. When I’m not working, you’ll find me reading or playing with my 2 little boys.
+</p>
+<img class="about-img" src="public/images/mariam1.jpg" alt="mariam pic">
+</section>
+<div class="skills-con">
+    <div class="skills skills-m">
+        <h4>Motion Design Skills</h4>
+        <ul>
+            <li><i class="fas fa-square"></i>Cinema 4D</li>
+            <li><i class="fas fa-square"></i>After Effects</li>
+            <li><i class="fas fa-square"></i>Premiere</li>
+        </ul>
+    </div>
+    <div class="skills skills-dev">
+        <h4>Front-End Development Skills</h4>
+        <ul>
+            <li><i class="fas fa-square"></i>HTML5</li>
+            <li><i class="fas fa-square"></i>CSS3</li>
+            <li><i class="fas fa-square"></i>Vanilla JS</li>
+            <li><i class="fas fa-square"></i>Node JS</li>
+            <li><i class="fas fa-square"></i>Sass</li>
+        </ul>
+        <ul>
+            <li><i class="fas fa-square"></i>Bootstrap</li>
+            <li><i class="fas fa-square"></i>PHP</li>
+            <li><i class="fas fa-square"></i>Python</li>
+            <li><i class="fas fa-square"></i>MySQL</li>
+        </ul>
+    </div>
+    <div class="skills skills-g">
+        <h4>Graphic Design Skills</h4>
+        <ul>
+            <li><i class="fas fa-square"></i>Photoshop</li>
+            <li><i class="fas fa-square"></i>Illustrator</li>
+            <li><i class="fas fa-square"></i>XD</li>
+            <li><i class="fas fa-square"></i>InDesign</li>
+        </ul>
+    </div>
+</div>
+
 
 <section id="development">
 <h1>Web Development Projects</h1>
