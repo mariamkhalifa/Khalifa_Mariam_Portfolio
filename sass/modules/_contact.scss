@@ -1,0 +1,52 @@
+#contact {
+    @include column;
+    align-items: center;
+    padding: 0 25px 30px 25px;;
+    background-color: $blue;
+    p {
+        width: 80%;
+        max-width: 670px;
+        text-align: center;
+    }
+}
+
+#form {
+    width: 80%;
+    max-width: 670px;
+    @include column;
+    @include m-t-40;
+    input, textarea {
+        border: 1px solid $purple;
+        background-color: $blue;
+        padding: 8px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    ::placeholder {
+        font-family: $font;
+        font-size: .9em;
+        color: $purple;
+        opacity: .8;
+    }
+    textarea::placeholder {
+        font-size: .8em;
+    }
+    .submit-btn {
+        border: none;
+        background-color: $purple;
+        padding: 15px;
+        border-radius: 5px;
+        margin-top: 15px;
+        font-family: $font;
+        font-size: 1em;
+        color: white;
+    }
+}
+
+.small-butterfly {
+    width: 100px;
+    margin-left: 5px;
+    @include m-r-a;
+    @include m-t-40;
+    @include flip-vertical;
+}

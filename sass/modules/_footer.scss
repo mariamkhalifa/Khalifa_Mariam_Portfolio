@@ -1,0 +1,37 @@
+#footer {
+    @include column;
+    align-items: center;
+    background-color: $purple;
+    padding: 10px 25px;
+    p { 
+        color: white;
+        font-size: .7em;
+    }
+}
+
+.social-media {
+    @include row;
+    a { 
+        margin-right: 8px;
+        color: $blue;
+        transition: all ease .5s;
+    }
+    a:hover {
+        color: white;
+    }
+}
+
+.fa-chevron-up {
+    color: $purple;
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+}
+
+@media screen and (min-width: 767px) {
+    #footer {
+        @include row;
+        justify-content: space-between;
+        padding: 15px 25px;
+    }
+}
