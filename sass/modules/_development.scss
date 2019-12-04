@@ -23,11 +23,13 @@
         max-width: 100%;
         margin-top: 20px;
     }
+    .dev-projects:last-child {
+        margin-bottom: 40px;
+    }
 }
 
 @media screen and (min-width:767px) {
     #development h1 { 
-        font-size: 2em;
         max-width: 300px 
     }
     .dev-projects {
@@ -42,11 +44,6 @@
 }
 
 @media screen and (min-width:1023px) {
-    #development {
-        h1 { 
-            font-size: 2.25em;
-        }
-    }
     .dev-projects {
         @include row;
     }

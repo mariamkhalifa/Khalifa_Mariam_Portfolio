@@ -72,7 +72,6 @@ My style is simplicity paired with functionality. When I’m not working, you’
     </div>
 </div>
 
-
 <section id="development">
 <h1>Web Development Projects</h1>
 <div class="dev-projects">
@@ -99,6 +98,7 @@ My style is simplicity paired with functionality. When I’m not working, you’
 </div>
 </section>
 
+<?php include 'contact.php';?>
 
 <?php include 'footer.php';?>
 

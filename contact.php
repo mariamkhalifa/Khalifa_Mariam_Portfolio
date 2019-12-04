@@ -1,36 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>PHP Contact Form</title>
-</head>
-<body>
-    <h2>CONTACT</h2>
-    <form action="contact/data_contact.php" method="post">
-        <!-- method="get" makes data in contact form visible in url. use method="post" for sensitive data liek password -->
-        <!-- action is the reciever -->
-        <!-- for attribute must be same as id of input to link them together -->
-        <!-- name attribute can be anything we want to name it. it's for back-end -->
-        <label for="u-name">Name</label>
-        <input id="u-name" type="text" name="name" placeholder="name">
+<section id="contact">
+    <h1>Let's create together..</h1>
+    <p>You can use this contact form to get in touch. I'll get back to you within 2 business days. 
+<br>Unless, of course, I am unable to do so!</p>
+    <form id="form" action="contact/data_contact.php" method="post">
+        <label for="u-name"></label>
+        <input id="u-name" type="text" name="name" placeholder="e.g. Harry Potter" required>
 
-        <label for="u-email">Email</label>
-        <input id="u-email" type="email" name="email" placeholder="email">
+        <label for="u-email"></label>
+        <input id="u-email" type="email" name="email" placeholder="e.g. harry@hogwarts.edu" required>
 
-        <label for="e-subject">Subject</label>
-        <input id="e-subject" type="text" name="subject" placeholder="subject">
+        <label for="u-subject"></label>
+        <input id="u-subject" type="text" name="subject" placeholder="Subject" required>
 
-        <label for="e-message">Message</label>
-        <textarea id="e-message" name="message"></textarea>
+        <label for="u-message"></label>
+        <textarea id="u-message" name="message" Placeholder="Message" required></textarea>
 
-        <button type="submit">Submit</button>
-
+        <button class="submit-btn" type="submit">Submit</button>
     </form>
-
-</body>
-</html>
+    <img class="small-butterfly" src="public/images/butterfly.png" alt="butterfly">
+</section>
 
 
 
