@@ -98,6 +98,57 @@ My style is simplicity paired with functionality. When I’m not working, you’
 </div>
 </section>
 
+<section id="motion">
+<div class="demo-reel"></div>
+<div class="motion-projects">
+    <div class="video">
+        <div class="thumbnail"></div>
+        <div class="lightbox">
+            <video controls width="250">
+                <source src="public/videos/lamps.mp4" type="video/mp4">
+                <source src="public/videos/lamps.ogg" type="video/ogg">
+                <source src="public/videos/lamps.webm" type="video/webm">
+                Sorry, your browser doesn't support embedded videos.
+            </video>
+        </div>
+    </div>
+    <div class="video">
+        <div class="thumbnail"></div>
+        <div class="lightbox">
+            <video controls width="250">
+                <source src="public/videos/sportsnet.mp4" type="video/mp4">
+                <source src="public/videos/sportsnet.ogg" type="video/ogg">
+                <source src="public/videos/sportnet.webm" type="video/webm">
+                Sorry, your browser doesn't support embedded videos.
+            </video>
+        </div>
+    </div>
+    <div class="video">
+        <div class="thumbnail"></div>
+        <div class="lightbox">
+            <video controls width="250">
+                <source src="public/videos/homesecurity.mp4" type="video/mp4">
+                <source src="public/videos/homesecurity.ogg" type="video/ogg">
+                <source src="public/videos/homesecurity.webm" type="video/webm">
+                Sorry, your browser doesn't support embedded videos.
+            </video>
+        </div>
+    </div>
+    <div class="video">
+        <div class="thumbnail"></div>
+        <div class="lightbox">
+            <video controls width="250">
+                <source src="public/videos/jet-engine.mp4" type="video/mp4">
+                <source src="public/videos/jet-engine.ogg" type="video/ogg">
+                <source src="public/videos/jet-engine.webm" type="video/webm">
+                Sorry, your browser doesn't support embedded videos.
+            </video>
+        </div>
+    </div>
+    
+</div>
+</section>
+
 <?php include 'contact.php';?>
 
 <?php include 'footer.php';?>
