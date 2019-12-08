@@ -17,9 +17,5 @@
 
         <button class="submit-btn" type="submit">Submit</button>
     </form>
-    <img class="small-butterfly" src="public/images/butterfly.png" alt="butterfly">
-    <i class="fas fa-chevron-up fa-3x"></i>
+    
 </section>
-
-
-

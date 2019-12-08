@@ -9,9 +9,9 @@
 <header id="main-header">
     <i class="fas fa-bars fa-2x"></i>
     <ul class="main-nav">
-        <a id="link-dev" href="#development"><li>Web Development</li></a>
-        <a id="link-motion" href="#design"><li>Motion Design</li></a>
         <a id="link-about" href="#about"><li>About</li></a>
+        <a id="link-dev" href="#development"><li>Web Development</li></a>
+        <a id="link-motion" href="#motion"><li>Motion Design</li></a>
         <a id="link-contact" href="#contact"><li>Contact</li></a>
     </ul>
     <a href="index.php" class="link-home">

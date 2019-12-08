@@ -21,11 +21,24 @@
     }
 }
 
-.fa-chevron-up {
+.bottom {
+    background-color: $blue;
+    padding-bottom: 40px;
+    position:  relative;
+    @include row;
+    justify-content: space-between;
+}
+
+.fa-chevron-up { 
     color: $purple;
-    position: fixed;
-    bottom: 100px;
-    right: 20px;
+    cursor: pointer;
+    @include m-r-25;
+    margin-top: 20px;
+}
+
+.butterflies {
+    width: 150px;
+    @include m-l-25;
 }
 
 @media screen and (min-width: 767px) {
