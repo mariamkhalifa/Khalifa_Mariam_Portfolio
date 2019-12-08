@@ -1,7 +1,7 @@
 #project-header {
     @include column;
     background-color: $blue;
-    height: 25vh;
+    height: 50vh;
     .link-home {
         width: 100px;
         @include m-r-a;
@@ -54,6 +54,25 @@
     img:last-child { @include m-t-40; }
 }
 
+.error-con {
+    @include column;
+    align-items: center;
+    margin: 50px;
+}
+
+.error-home {
+    padding: 30px;
+    background-color: $purple;
+    color: white;
+    transition: all .5s ease;
+    border-radius: 5px;
+}
+
+.project-butterflies {
+    width: 150px;
+    margin-top: 20px; 
+}
+
 @media screen and (min-width: 767px) {
     #project-header {
         height: 100px;
@@ -83,6 +102,9 @@
 }
 
 @media screen and (min-width: 1024px) {
+    #project-header {
+        height: 150px;
+    }
     .project-con {
         display: grid !important;
         grid-template-areas: "h1 h1"

@@ -13,6 +13,11 @@
     @include m-r-a;
     @include m-l-a;
     margin-top: 20px;
+    transition: all .5s ease;
+}
+
+.link-home:hover {
+    opacity: .7;
 }
 
 .logo {
@@ -34,6 +39,9 @@
 
 .main-nav {
     display: none;
+    a { transition: all ease .5s; }
+    a:hover { opacity: .7; }
+    
 }
 
 .main-nav.visible {
@@ -41,7 +49,7 @@
     text-align: center;
     a {
         color: $purple;
-        transition: all ease 1s;
+        transition: all ease .5s;
         border-bottom: #ccc 1px solid;
         margin-top: 10px;
         padding: 5px;
@@ -50,7 +58,7 @@
         @include m-l-a;
     }
     a:last-child { border-bottom: none; }
-    a:hover { color: #ccc; }
+    a:hover { opacity: .7; }
 }
 
 .dots {

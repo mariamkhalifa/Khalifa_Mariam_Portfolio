@@ -7,13 +7,13 @@
 <body>
 <h1 class="hidden">Portfolio Project/</h1>
 <header id="project-header">
-    <!-- <i class="fas fa-bars fa-2x"></i> -->
-    <!-- <ul class="main-nav">
-        <a id="link-dev" href="#development"><li>Web Development</li></a>
-        <a id="link-motion" href="#design"><li>Motion Design</li></a>
-        <a id="link-about" href="#about"><li>About</li></a>
-        <a id="link-contact" href="#contact"><li>Contact</li></a>
-    </ul> -->
+    <i class="fas fa-bars fa-2x"></i>
+    <ul class="main-nav">
+        <a id="link-dev" href="index.php#development"><li>Web Development</li></a>
+        <a id="link-motion" href="index.php#design"><li>Motion Design</li></a>
+        <a id="link-about" href="index.php#about"><li>About</li></a>
+        <a id="link-contact" href="index.php#contact"><li>Contact</li></a>
+    </ul>
     <a href="index.php" class="link-home">
         <picture class="logo">
             <source media="(min-width: 767px)" srcset="public/images/logo.svg">
@@ -69,7 +69,10 @@ if($num>0):?>
 
     
 else:?>
-<h1>No Project</h1>
+<h1>Uh Oh! Are you lost?</h1>
+<div class="error-con"><a class="error-home" href="index.php">I'll help you find your way!</a></div>
 <?php endif;?>
+
+<img class="project-butterflies" src="public/images/butterflies.png" alt="butterflies">
 
 <?php include 'footer.php';?>

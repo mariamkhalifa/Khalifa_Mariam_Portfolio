@@ -1,3 +1,8 @@
+<div class="bottom">
+    <img class="butterflies" src="public/images/butterflies.png" alt="butterfly">
+    <i class="fas fa-chevron-up fa-3x"></i>
+</div>
+
 <footer id="footer">
     <h1 class="hidden">Main Footer</h1>
     <p>&copy; Mariam Khalifa 2019.</p>

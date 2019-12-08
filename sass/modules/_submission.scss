@@ -1,0 +1,34 @@
+#submission-header {
+    @include column;
+    background-color: $blue;
+    height: 50vh;
+    .link-home {
+        width: 100px;
+        @include m-r-a;
+        @include m-l-a;
+        margin-top: 20px;
+    }
+    
+    .logo {
+        width: 100%;
+    }
+}
+
+.submission-con {
+    @include column;
+    align-items: center;
+    background-color: $blue;
+    p {
+        padding: 30px;
+        text-align: center;
+        color: $purple;
+        font-size: 1em;
+        border: 3px solid $purple;
+        border-radius: 5px;
+    }
+}
+
+.sub-butterflies {
+    width: 100px;
+}
+
