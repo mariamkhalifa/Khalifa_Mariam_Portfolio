@@ -17,7 +17,7 @@
         transition: all ease .5s;
     }
     a:hover {
-        color: white;
+        opacity: .5;
     }
 }
 
@@ -34,6 +34,11 @@
     cursor: pointer;
     @include m-r-25;
     margin-top: 20px;
+    transition: all .5 ease;
+}
+
+.fa-chevron-up:hover {
+    opacity: .7;
 }
 
 .butterflies {

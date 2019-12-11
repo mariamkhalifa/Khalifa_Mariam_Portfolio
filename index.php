@@ -99,54 +99,82 @@ My style is simplicity paired with functionality. When I’m not working, you’
 </section>
 
 <section id="motion">
-<div class="demo-reel"></div>
+<h1>Motion Design Projects</h1>
+<div class="demo-reel">
+    <div class="thumbnail demo-reel-thumb">
+        <img data-target="demo-reel" src="public/images/demo-reel.jpg" alt="demo reel video">
+    </div>
+        <!-- <div class="lightbox">
+            <video controls>
+                <source src="public/videos/demo-reel.mp4" type="video/mp4">
+                <source src="public/videos/demo-reel.ogg" type="video/ogg">
+                <source src="public/videos/demo-reel.webm" type="video/webm">
+                Sorry, your browser doesn't support embedded videos.
+            </video>
+        </div> -->
+</div>
 <div class="motion-projects">
-    <div class="video">
-        <div class="thumbnail"></div>
-        <div class="lightbox">
-            <video controls width="250">
+    <div class="thumbnail lamps-thumb">
+        <img data-target="lamps" src="public/images/lamps.jpg" alt="lamps video">
+    </div>
+        <!-- <div class="lightbox">
+            <video controls>
                 <source src="public/videos/lamps.mp4" type="video/mp4">
                 <source src="public/videos/lamps.ogg" type="video/ogg">
                 <source src="public/videos/lamps.webm" type="video/webm">
                 Sorry, your browser doesn't support embedded videos.
             </video>
-        </div>
+        </div> -->
     </div>
-    <div class="video">
-        <div class="thumbnail"></div>
-        <div class="lightbox">
-            <video controls width="250">
+    <div class="thumbnail sportsnet-thumb">
+        <img data-target="sportsnet" src="public/images/sportsnet.jpg" alt="sportsnet video">
+    </div>
+        <!-- <div class="lightbox">
+            <video controls>
                 <source src="public/videos/sportsnet.mp4" type="video/mp4">
                 <source src="public/videos/sportsnet.ogg" type="video/ogg">
                 <source src="public/videos/sportnet.webm" type="video/webm">
                 Sorry, your browser doesn't support embedded videos.
             </video>
-        </div>
+        </div> -->
     </div>
-    <div class="video">
-        <div class="thumbnail"></div>
-        <div class="lightbox">
-            <video controls width="250">
-                <source src="public/videos/homesecurity.mp4" type="video/mp4">
-                <source src="public/videos/homesecurity.ogg" type="video/ogg">
-                <source src="public/videos/homesecurity.webm" type="video/webm">
+    <div class="thumbnail smart-thermostat-thumb">
+        <img data-target="smart-thermostat" src="public/images/smart-thermostat.jpg" alt="smart thermostat video">
+    </div>
+        <!-- <div class="lightbox">
+            <video controls>
+                <source src="public/videos/smart-thermostat.mp4" type="video/mp4">
+                <source src="public/videos/smart-thermostat.ogg" type="video/ogg">
+                <source src="public/videos/smart-thermostat.webm" type="video/webm">
                 Sorry, your browser doesn't support embedded videos.
             </video>
-        </div>
+        </div> -->
     </div>
-    <div class="video">
-        <div class="thumbnail"></div>
-        <div class="lightbox">
-            <video controls width="250">
+    <div class="thumbnail jet-engine-thumb">
+        <img data-target="jet-engine" src="public/images/jet-engine.jpg" alt="jet-engine video">
+    </div>
+        <!-- <div class="lightbox">
+            <video controls>
                 <source src="public/videos/jet-engine.mp4" type="video/mp4">
                 <source src="public/videos/jet-engine.ogg" type="video/ogg">
                 <source src="public/videos/jet-engine.webm" type="video/webm">
                 Sorry, your browser doesn't support embedded videos.
-            </video>
-        </div>
+            </video> -->
     </div>
-    
 </div>
+    
+<div class="lightbox">
+    <div class="close-lightbox">X</div>
+    <div class="video">
+        <video controls>
+            <source src="" type="video/mp4">
+            <!-- <source src="public/videos/sportsnet.ogg" type="video/ogg">
+            <source src="public/videos/sportnet.webm" type="video/webm">
+            Sorry, your browser doesn't support embedded videos. -->
+        </video>
+    </div>
+</div>
+
 </section>
 
 <?php include 'contact.php';?>

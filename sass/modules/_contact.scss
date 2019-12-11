@@ -40,5 +40,10 @@
         font-family: $font;
         font-size: 1em;
         color: white;
+        cursor: pointer;
+        transition: all .5s  ease;
+    }
+    .submit-btn:hover {
+        opacity: .7;
     }
 }
