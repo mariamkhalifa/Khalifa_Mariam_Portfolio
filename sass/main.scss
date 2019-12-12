@@ -49,6 +49,7 @@ a {
     padding: 0;
     text-decoration: none;
     color: $grey;
+    cursor: pointer;
 }
 
 ul, li {
@@ -73,5 +74,27 @@ ul, li {
 @media screen and (min-width:1023px) {
     h1 { 
         font-size: 2.25em;
+    }
+}
+
+@keyframes fade-anim {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes wiggle-anim {
+    25% {
+        transform: rotate(1deg);
+        -webkit-transform: rotate(1deg);
+        -ms-transform: rotate(1deg);
+    }
+    50% {
+        transform: rotate(-1deg);
+        -webkit-transform: rotate(-1deg);
+        -ms-transform: rotate(-1deg);
     }
 }

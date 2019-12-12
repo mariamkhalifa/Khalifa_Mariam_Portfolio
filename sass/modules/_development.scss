@@ -1,4 +1,6 @@
 #development {
+    opacity: 0;
+    transition: all .5s ease;
     @include column;
     align-items: center;
     h1 { max-width: 242px;}
@@ -52,15 +54,3 @@
     }
 }
 
-@keyframes wiggle-anim {
-    25% {
-        transform: rotate(1deg);
-        -webkit-transform: rotate(1deg);
-        -ms-transform: rotate(1deg);
-    }
-    50% {
-        transform: rotate(-1deg);
-        -webkit-transform: rotate(-1deg);
-        -ms-transform: rotate(-1deg);
-    }
-}

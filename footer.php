@@ -13,6 +13,10 @@
     </div>
 </footer>
 
-<script type="module" src="public/js/main.js"></script>
+<script src="public/js/nav.js"></script>
+<script src="public/js/waypoints.js"></script>
+<script src="public/js/about.js"></script>
+<script src="public/js/scrollTop.js"></script>
+
 </body>
 </html>

@@ -11,19 +11,19 @@
     <script src="https://kit.fontawesome.com/cfa5b23a00.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/ScrollToPlugin.min.js"></script>
-    <title>From Submission\</title>
+    <title>Form Submission\</title>
 </head>
 <body>
 <h1 class="hidden">Form Submission</h1>
 <header id="submission-header">
     <i class="fas fa-bars fa-2x"></i>
     <ul class="main-nav">
-        <a id="link-dev" href="index.php#development"><li>Web Development</li></a>
-        <a id="link-motion" href="index.php#design"><li>Motion Design</li></a>
-        <a id="link-about" href="index.php#about"><li>About</li></a>
-        <a id="link-contact" href="index.php#contact"><li>Contact</li></a>
+        <a id="link-dev" href="../index.php#development"><li>Web Development</li></a>
+        <a id="link-motion" href="../index.php#motion"><li>Motion Design</li></a>
+        <a id="link-about" href="../index.php#about"><li>About</li></a>
+        <a id="link-contact" href="../index.php#contact"><li>Contact</li></a>
     </ul>
-    <a href="index.php" class="link-home">
+    <a href="../index.php" class="link-home">
         <picture class="logo">
             <source media="(min-width: 767px)" srcset="../public/images/logo.svg">
             <img  src="../public/images/logo-alt.svg" alt="logo">

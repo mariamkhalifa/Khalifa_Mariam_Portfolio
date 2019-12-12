@@ -1,5 +1,4 @@
-console.log('hi!');
-(()=>{
+(function (){
 
 let projectName = document.querySelector('.title'),
     deskTopImgCon = document.querySelector('.dt-img-con'),
@@ -9,7 +8,6 @@ let projectName = document.querySelector('.title'),
 if (mediaQuery.matches && projectName.textContent == 'Animal Tracks') {
     mobileImg.style.display = 'block !important'; 
     console.log('!!!');
-        
 }
 
 if (projectName.textContent == 'Animal Tracks') {
@@ -21,6 +19,5 @@ if (projectName.textContent == 'Animal Tracks') {
 if (projectName.textContent == 'Favourite Things') {
     deskTopImgCon.style.height = 'auto';
 }
-
 
 })();

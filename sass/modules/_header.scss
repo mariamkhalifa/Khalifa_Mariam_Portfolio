@@ -6,6 +6,7 @@
     background-size: cover;
     position: relative;
     @include column;
+    animation: fade-anim 2.5s;
 }
 
 .link-home {
@@ -13,11 +14,13 @@
     @include m-r-a;
     @include m-l-a;
     margin-top: 20px;
-    transition: all .5s ease;
+    transition: all 1s ease;
 }
 
 .link-home:hover {
-    opacity: .7;
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .logo {
@@ -33,15 +36,18 @@
     transition: all ease 1s;
 }
 
+.fa-bars:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
 .rotated {
     @include rotate-90;
 }
 
 .main-nav {
     display: none;
-    a { transition: all ease .5s; }
-    a:hover { opacity: .7; }
-    
 }
 
 .main-nav.visible {
@@ -58,7 +64,7 @@
         @include m-l-a;
     }
     a:last-child { border-bottom: none; }
-    a:hover { opacity: .7; }
+    a:hover { background-color : rgba($color: $nude, $alpha: .6); }
 }
 
 .dots {
@@ -146,11 +152,18 @@
         position: fixed;
         top: 20px;
         right: 25px;
-        a { 
+        z-index: 10;
+        a > li { 
             color: $purple; 
             transition: all ease .5s;
         }
-        a:hover { color: #ccc; }
-        li { padding: 3px 0}
+        a > li:hover { 
+            -webkit-transform: scale(1.05);
+            -ms-transform: scale(1.05);
+            transform: scale(1.05);
+            background-color : rgba($color: $nude, $alpha: .6); 
+        }
+        li { padding: 5px; }
     }
 }
+
