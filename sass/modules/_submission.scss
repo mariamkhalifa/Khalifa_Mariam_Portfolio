@@ -1,7 +1,7 @@
 #submission-header {
     @include column;
     background-color: $blue;
-    height: 50vh;
+    height: 25vh;
     .link-home {
         width: 100px;
         @include m-r-a;
@@ -30,5 +30,18 @@
 
 .sub-butterflies {
     width: 100px;
+}
+
+@media screen and (min-width: 767px) {
+    #submission-header {
+        height: 150px;
+    }
+    .link-home {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 150px !important;
+        margin-top: 0 !important;
+    }
 }
 

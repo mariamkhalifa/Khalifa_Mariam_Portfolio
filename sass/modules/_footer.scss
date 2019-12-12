@@ -17,7 +17,10 @@
         transition: all ease .5s;
     }
     a:hover {
-        opacity: .5;
+        color: rgba($color: $nude, $alpha: .6);
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
     }
 }
 
@@ -34,11 +37,15 @@
     cursor: pointer;
     @include m-r-25;
     margin-top: 20px;
-    transition: all .5 ease;
+    transition: all 1s ease;
 }
 
 .fa-chevron-up:hover {
-    opacity: .7;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    color: rgba($color: $nude, $alpha: .8);
+    text-shadow: 3px 2px 4px rgba($color: #000000, $alpha: .3);
 }
 
 .butterflies {

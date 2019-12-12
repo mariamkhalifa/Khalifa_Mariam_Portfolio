@@ -1,8 +1,11 @@
 #about {
+    opacity: 0;
     @include column;
     align-items: center;
     @include m-r-25;
     @include m-l-25;
+    transition: all .5s ease;
+    //animation: fade-anim 2s;
     img {
         max-width: 80%;
     }

@@ -1,4 +1,6 @@
 #motion {
+    opacity: 0;
+    transition: all .5s ease;
     @include m-t-80;
     @include column;
     align-items:  center;
@@ -11,11 +13,13 @@
 .thumbnail {
     @include m-t-80;
     cursor: pointer;
-    transition: all .5s ease;
+    transition: all 1s ease;
 }
 
 .thumbnail:hover {
-    opacity: .8;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .lightbox {
@@ -26,14 +30,11 @@
 }
 
 .close-lightbox {
-    //position: relative;
-    //right: 25px;
-    //top: 20px;
     color: white;
 }
 
-//.video {
-    //position: relative;
-    //right: 50%;
-    //left: 50%;
-//}
+.video {
+    width: 100%;
+    @include column;
+    align-items: center;
+}
