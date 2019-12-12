@@ -17,24 +17,39 @@
 }
 
 .thumbnail:hover {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02);
 }
 
 .lightbox {
     position: absolute;
     width: 100%;
     height: 100vh;
+    @include column;
+    align-items: center;
     background-color: rgba($color: #000000, $alpha: .7);
 }
 
 .close-lightbox {
+    @include m-l-a;
+    @include m-r-25;
+    @include m-t-40;
     color: white;
+    cursor: pointer;
+}
+
+.close-lightbox:hover {
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02);
 }
 
 .video {
-    width: 100%;
     @include column;
     align-items: center;
+    video {
+        width: 80%;
+        @include m-t-80;
+    }
 }

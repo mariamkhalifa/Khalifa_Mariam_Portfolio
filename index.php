@@ -167,7 +167,7 @@ My style is simplicity paired with functionality. When I’m not working, you’
     <div class="close-lightbox">X</div>
     <div class="video">
         <video controls>
-            <source src="" type="video/mp4">
+            <source src="public/videos/demo-reel.mp4" type="video/mp4">
             <!-- <source src="public/videos/sportsnet.ogg" type="video/ogg">
             <source src="public/videos/sportnet.webm" type="video/webm">
             Sorry, your browser doesn't support embedded videos. -->

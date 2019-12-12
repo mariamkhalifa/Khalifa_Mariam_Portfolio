@@ -18,9 +18,9 @@
 }
 
 .link-home:hover {
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .logo {
@@ -152,12 +152,18 @@
         position: fixed;
         top: 20px;
         right: 25px;
-        a { 
+        z-index: 10;
+        a > li { 
             color: $purple; 
             transition: all ease .5s;
         }
-        a:hover { color: #ccc; }
-        li { padding: 3px 0}
+        a > li:hover { 
+            -webkit-transform: scale(1.05);
+            -ms-transform: scale(1.05);
+            transform: scale(1.05);
+            background-color : rgba($color: $nude, $alpha: .6); 
+        }
+        li { padding: 5px; }
     }
 }
 
