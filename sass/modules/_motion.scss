@@ -10,7 +10,13 @@
     padding: 0 25px;
 }
 
+.motion-projects {
+    padding: 0 25px;
+}
+
 .thumbnail {
+    @include column;
+    align-items: center;
     @include m-t-80;
     cursor: pointer;
     transition: all 1s ease;
@@ -22,34 +28,72 @@
     transform: scale(1.02);
 }
 
+.thumb-title {
+    order: 2;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 40px;
+}
+
 .lightbox {
-    position: absolute;
+    display: none;
+}
+
+.lightbox.show {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
     width: 100%;
     height: 100vh;
     @include column;
     align-items: center;
-    background-color: rgba($color: #000000, $alpha: .7);
+    background-color: rgba($color: #000000, $alpha: .9);
 }
 
 .close-lightbox {
-    @include m-l-a;
-    @include m-r-25;
-    @include m-t-40;
+    margin-top: 20px;
+    font-size: 1.5em;
     color: white;
     cursor: pointer;
+    transition: all ease 1s;
 }
 
 .close-lightbox:hover {
-    -webkit-transform: scale(1.02);
-    -ms-transform: scale(1.02);
-    transform: scale(1.02);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
-.video {
+.video-con {
     @include column;
     align-items: center;
     video {
-        width: 80%;
-        @include m-t-80;
+        width: 70%;
+        margin-top: 10px;
+    }
+}
+
+.video-title {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+    margin-bottom: 0;
+}
+
+.video-text {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    padding: 0 25px;
+}
+
+@media screen and (min-width:767px) {
+    .motion-projects {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 20px;
     }
 }

@@ -73,7 +73,9 @@ else:?>
 <div class="error-con"><a class="error-home" href="index.php">I'll help you find your way!</a></div>
 <?php endif;?>
 
-<img class="project-butterflies" src="public/images/butterflies.png" alt="butterflies">
+<div class="butterflies-con">
+    <img class="project-butterflies" src="public/images/butterflies.png" alt="butterflies">
+</div>
 
 <footer id="footer">
     <h1 class="hidden">Main Footer</h1>

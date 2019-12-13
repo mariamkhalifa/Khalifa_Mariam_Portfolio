@@ -7,20 +7,21 @@
     transition: all .5s ease;
     img {
         max-width: 80%;
+        margin-top: 20px;
     }
     span {
         font-size: 1.25em;
         line-height: 1.5em;
     }
     p {
-        padding: 0 20px 20px 20px;
+        padding: 40px 20px 20px 20px;
         max-width: 80%;
     }
 }
 
 .skills-con {
     background-color: $blue;
-    @include m-t-40;
+    @include m-t-80;
     padding: 40px 25px;
 }
 
