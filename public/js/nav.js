@@ -1,3 +1,5 @@
+(function (){
+
 let burger = document.querySelector('.fa-bars'),
     mainNav = document.querySelector('.main-nav'),
     mediaQuery1 = window.matchMedia('(min-width: 1024px)'),
@@ -74,3 +76,5 @@ linkAbout.addEventListener('click', scrollToAbout);
 linkDev.addEventListener('click', scrollToDevelopment);
 //linkMotion.addEventListener('click', scrollToMotion);
 linkContact.addEventListener('click', scrollToContact);
+
+})();

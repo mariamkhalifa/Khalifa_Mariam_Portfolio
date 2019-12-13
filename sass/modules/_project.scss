@@ -68,9 +68,16 @@
     border-radius: 5px;
 }
 
+.butterflies-con {
+    @include column;
+    //align-items: center;
+}
+
 .project-butterflies {
     width: 150px;
     margin-top: 20px; 
+    @include m-l-a;
+    @include m-r-a;
 }
 
 @media screen and (min-width: 767px) {
@@ -98,6 +105,10 @@
             margin-top: 0 !important;
             @include m-l-40;
         }
+    }
+
+    .project-butterflies {
+        @include m-l-25;
     }
 }
 
@@ -136,5 +147,6 @@
             }
         }
     }
+    
 
 }

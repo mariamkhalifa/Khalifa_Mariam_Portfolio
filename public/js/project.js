@@ -7,7 +7,7 @@ let projectName = document.querySelector('.title'),
 
 if (mediaQuery.matches && projectName.textContent == 'Animal Tracks') {
     mobileImg.style.display = 'block !important'; 
-    console.log('!!!');
+    //console.log('!!!');
 }
 
 if (projectName.textContent == 'Animal Tracks') {
@@ -16,8 +16,9 @@ if (projectName.textContent == 'Animal Tracks') {
     mobileImg.style.display = 'none';
 }
 
-if (projectName.textContent == 'Favourite Things') {
+if (projectName.textContent == 'My Favourite Things') {
     deskTopImgCon.style.height = 'auto';
+    deskTopImgCon.style.overflowY = 'auto';
 }
 
 })();

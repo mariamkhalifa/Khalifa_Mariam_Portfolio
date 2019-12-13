@@ -100,82 +100,52 @@ My style is simplicity paired with functionality. When I’m not working, you’
 
 <section id="motion">
 <h1>Motion Design Projects</h1>
+
 <div class="demo-reel">
-    <div class="thumbnail demo-reel-thumb">
-        <img data-target="demo-reel" src="public/images/demo-reel.jpg" alt="demo reel video">
-    </div>
-        <!-- <div class="lightbox">
-            <video controls>
-                <source src="public/videos/demo-reel.mp4" type="video/mp4">
-                <source src="public/videos/demo-reel.ogg" type="video/ogg">
-                <source src="public/videos/demo-reel.webm" type="video/webm">
-                Sorry, your browser doesn't support embedded videos.
-            </video>
-        </div> -->
-</div>
-<div class="motion-projects">
-    <div class="thumbnail lamps-thumb">
-        <img data-target="lamps" src="public/images/lamps.jpg" alt="lamps video">
-    </div>
-        <!-- <div class="lightbox">
-            <video controls>
-                <source src="public/videos/lamps.mp4" type="video/mp4">
-                <source src="public/videos/lamps.ogg" type="video/ogg">
-                <source src="public/videos/lamps.webm" type="video/webm">
-                Sorry, your browser doesn't support embedded videos.
-            </video>
-        </div> -->
-    </div>
-    <div class="thumbnail sportsnet-thumb">
-        <img data-target="sportsnet" src="public/images/sportsnet.jpg" alt="sportsnet video">
-    </div>
-        <!-- <div class="lightbox">
-            <video controls>
-                <source src="public/videos/sportsnet.mp4" type="video/mp4">
-                <source src="public/videos/sportsnet.ogg" type="video/ogg">
-                <source src="public/videos/sportnet.webm" type="video/webm">
-                Sorry, your browser doesn't support embedded videos.
-            </video>
-        </div> -->
-    </div>
-    <div class="thumbnail smart-thermostat-thumb">
-        <img data-target="smart-thermostat" src="public/images/smart-thermostat.jpg" alt="smart thermostat video">
-    </div>
-        <!-- <div class="lightbox">
-            <video controls>
-                <source src="public/videos/smart-thermostat.mp4" type="video/mp4">
-                <source src="public/videos/smart-thermostat.ogg" type="video/ogg">
-                <source src="public/videos/smart-thermostat.webm" type="video/webm">
-                Sorry, your browser doesn't support embedded videos.
-            </video>
-        </div> -->
-    </div>
-    <div class="thumbnail jet-engine-thumb">
-        <img data-target="jet-engine" src="public/images/jet-engine.jpg" alt="jet-engine video">
-    </div>
-        <!-- <div class="lightbox">
-            <video controls>
-                <source src="public/videos/jet-engine.mp4" type="video/mp4">
-                <source src="public/videos/jet-engine.ogg" type="video/ogg">
-                <source src="public/videos/jet-engine.webm" type="video/webm">
-                Sorry, your browser doesn't support embedded videos.
-            </video> -->
-    </div>
-</div>
-    
-<div class="lightbox">
-    <div class="close-lightbox">X</div>
-    <div class="video">
-        <video controls>
-            <source src="public/videos/demo-reel.mp4" type="video/mp4">
-            <!-- <source src="public/videos/sportsnet.ogg" type="video/ogg">
-            <source src="public/videos/sportnet.webm" type="video/webm">
-            Sorry, your browser doesn't support embedded videos. -->
-        </video>
+    <div class="thumbnail demo-reel-thumb" data-target="demo-reel">
+        <h2 class="thumb-title">Demo Reel 2019</h2>
+        <img src="public/images/demo-reel.jpg" alt="demo reel video">
     </div>
 </div>
 
+<div class="motion-projects">
+    <div class="thumbnail lamps-thumb" data-target="lamps">
+        <h2 class="thumb-title">Lamps Advertisement</h2>
+        <img src="public/images/lamps.jpg" alt="lamps video">
+    </div>
+      
+    <div class="thumbnail sportsnet-thumb" data-target="sportsnet">
+        <h2 class="thumb-title">Sportsnet Promo</h2>
+        <img src="public/images/sportsnet.jpg" alt="sportsnet video">
+    </div>
+     
+    <div class="thumbnail smart-thermostat-thumb" data-target="smart-thermostat">
+        <h2 class="thumb-title">Smart Thermostat 3D Model</h2>
+        <img src="public/images/smart-thermostat.jpg" alt="smart thermostat video">
+    </div>
+      
+    <div class="thumbnail jet-engine-thumb" data-target="jet-engine">
+        <h2 class="thumb-title">Jet Engine 3D Model</h2>
+        <img src="public/images/jet-engine.jpg" alt="jet-engine video">
+    </div>
+     
+</div>
+</div>
 </section>
+
+<div class="lightbox">
+    <div class="close-lightbox">X</div>
+        <div class="video-con">
+            <h2 class="video-title">Demo Reel 2019</h2>
+            <p class="video-text">Created with Cinema 4D and After Effects.</p>
+            <video class="video" controls>
+                <source src="public/videos/demo-reel.mp4" type="video/mp4">
+                <!-- <source src="public/videos/sportsnet.ogg" type="video/ogg">
+                <source src="public/videos/sportnet.webm" type="video/webm">
+                Sorry, your browser doesn't support embedded videos. -->
+            </video>
+        </div>
+</div>
 
 <?php include 'contact.php';?>
 
