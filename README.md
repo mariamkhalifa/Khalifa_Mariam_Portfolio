@@ -1,4 +1,4 @@
-<p align="center"><img src="public/images/logo-alt.svg" width="80%">
+<p align="center"><img src="public/images/logo-alt.svg" width="50%">
 
 # My Portfolio
 
@@ -22,4 +22,5 @@ This is my portfolio website. I did all the design and the branding, as well as 
 - PHP
 - MySQL 
 ```
-
+# URL
+* http://mariamkhalifa.ca
