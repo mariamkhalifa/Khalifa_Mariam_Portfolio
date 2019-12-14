@@ -15,7 +15,7 @@
 
 <script src="public/js/nav.js"></script>
 <script src="public/js/waypoints.js"></script>
-<script src="public/js/about.js"></script>
+<script src="public/js/aboutImg.js"></script>
 <script src="public/js/lightbox.js"></script>
 <script src="public/js/scrollTop.js"></script>
 

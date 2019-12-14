@@ -20,6 +20,7 @@
             <img  src="public/images/logo-alt.svg" alt="logo">
         </picture>
     </a>
+    <!-- <p class="welcome">Welcome to my creative portfolio.</p> -->
     <ul class="dots">
         <li class="dot">.</li>
         <li class="dot">.</li>
@@ -100,35 +101,29 @@ My style is simplicity paired with functionality. When I’m not working, you’
 
 <section id="motion">
 <h1>Motion Design Projects</h1>
-
 <div class="demo-reel">
-    <div class="thumbnail demo-reel-thumb" data-target="demo-reel">
+    <div class="thumbnail" data-target="demo-reel">
         <h2 class="thumb-title">Demo Reel 2019</h2>
         <img src="public/images/demo-reel.jpg" alt="demo reel video">
     </div>
 </div>
-
 <div class="motion-projects">
-    <div class="thumbnail lamps-thumb" data-target="lamps">
+    <div class="thumbnail" data-target="lamps">
         <h2 class="thumb-title">Lamps Advertisement</h2>
         <img src="public/images/lamps.jpg" alt="lamps video">
     </div>
-      
-    <div class="thumbnail sportsnet-thumb" data-target="sportsnet">
+    <div class="thumbnail" data-target="sportsnet">
         <h2 class="thumb-title">Sportsnet Promo</h2>
         <img src="public/images/sportsnet.jpg" alt="sportsnet video">
     </div>
-     
-    <div class="thumbnail smart-thermostat-thumb" data-target="smart-thermostat">
+    <div class="thumbnail" data-target="smart-thermostat">
         <h2 class="thumb-title">Smart Thermostat 3D Model</h2>
         <img src="public/images/smart-thermostat.jpg" alt="smart thermostat video">
     </div>
-      
-    <div class="thumbnail jet-engine-thumb" data-target="jet-engine">
+    <div class="thumbnail" data-target="jet-engine">
         <h2 class="thumb-title">Jet Engine 3D Model</h2>
         <img src="public/images/jet-engine.jpg" alt="jet-engine video">
     </div>
-     
 </div>
 </div>
 </section>
