@@ -1,4 +1,4 @@
-<p align="center"><img src="public/images/logo-alt.svg" width="50%">
+<p align="center"><img src="public/images/logo-alt.svg" width="30%">
 
 # My Portfolio
 
