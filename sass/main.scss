@@ -90,6 +90,30 @@ ul, li {
     }
 }
 
+@keyframes down-anim {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(0, 10px);
+    }
+}
+
+@keyframes img-fade-anim {
+    0% {
+        opacity: 1;
+    }
+    45% {
+        opacity: 1;
+    }
+    55% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 @keyframes wiggle-anim {
     25% {
         transform: rotate(1deg);
