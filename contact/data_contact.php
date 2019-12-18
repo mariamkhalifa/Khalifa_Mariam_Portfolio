@@ -66,13 +66,13 @@ if (isset($_POST['message'])) {
 }
 
 //SEND OUT EMAIL
-// $headers = array(
-//     'From'=>'noreply@domainname.ca',
-//     'Reply=To'=>$name.'<'.$email.'>'
-// );
+$headers = array(
+    'From'=>'no-reply@mariamkhalifa.ca',
+    'Reply=To'=>$name.'<'.$email.'>'
+);
 
-// if(mail($recipient, $subject, $message, $headers)){
-if(mail($recipient, $subject, $message)){
+if(mail($recipient, $subject, $message, $headers)){
+//if(mail($recipient, $subject, $message)){
     echo '<p>Yay! <br>Your email was sent.<br> ^_^</p>';
 }else{
     echo '<p>Nooo! <br>Something went horribly wrong.<br> Sorry! :(</p>';
@@ -90,3 +90,6 @@ if(mail($recipient, $subject, $message)){
         <a href="https://vimeo.com/mariamkhalifa" target="_blank"><i class="fab fa-vimeo fa-2x"></i></a>
     </div>
 </footer>
+
+</body>
+</html>
