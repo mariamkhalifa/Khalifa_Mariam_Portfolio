@@ -51,6 +51,7 @@
 .butterflies {
     width: 150px;
     @include m-l-25;
+    animation: rotate-anim 3s infinite alternate forwards;
 }
 
 @media screen and (min-width: 767px) {
