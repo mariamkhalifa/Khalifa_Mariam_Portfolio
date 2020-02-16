@@ -20,7 +20,11 @@
             <img  src="public/images/logo-alt.svg" alt="logo">
         </picture>
     </a>
-    <!-- <p class="welcome">Welcome to my creative portfolio.</p> -->
+    <div class="welcome">
+        <h1>Hello,</h1>
+        <h2>I'm a front-end developer</h2>
+        <h2>This is my portfolio.</h2>
+    </div>
     <ul class="dots">
         <li class="dot">.</li>
         <li class="dot">.</li>
@@ -31,8 +35,8 @@
 
 <section id="about">
 <h1>A little bit about me..</h1>
-<p class="about-text"><span>Hi there!</span><br>I’m a 2nd year interactive media design student at Fanshawe College, London, Ontario. I'm to graduate next April/2020.
-I love to create and I love to tell stories that evoke powerful emotions. That’s why I chose this career.
+<p class="about-text"><span>Hi there!</span><br>I’m a 2nd year interactive media design student at Fanshawe College, London, Ontario. I'm to graduate next April/2020. I'm a front-end developer who is in love with Javascript.
+I love to create and I love to tell stories that evoke powerful emotions.
 My style is simplicity paired with functionality. When I’m not working, you’ll find me reading or playing with my 2 little boys.
 </p>
 <img class="about-img" src="public/images/mariam1.jpg" alt="mariam pic">
@@ -53,9 +57,10 @@ My style is simplicity paired with functionality. When I’m not working, you’
             <li><i class="fas fa-square"></i>CSS3</li>
             <li><i class="fas fa-square"></i>Vanilla JS</li>
             <li><i class="fas fa-square"></i>Node JS</li>
-            <li><i class="fas fa-square"></i>Sass</li>
+            <li><i class="fas fa-square"></i>Vue JS</li>
         </ul>
         <ul>
+            <li><i class="fas fa-square"></i>Sass</li>
             <li><i class="fas fa-square"></i>Bootstrap</li>
             <li><i class="fas fa-square"></i>PHP</li>
             <li><i class="fas fa-square"></i>Python</li>
