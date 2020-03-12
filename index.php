@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php include 'header.php';?>
+    <?php include 'head.php';?>
     <title>Mariam Khalifa</title>
 </head>
 <body>
