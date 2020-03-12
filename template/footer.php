@@ -1,5 +1,5 @@
 <div class="bottom">
-    <img class="butterflies" src="public/images/butterflies.png" alt="butterfly">
+    <img class="butterflies" src="images/butterflies.png" alt="butterfly">
     <i class="fas fa-chevron-up fa-3x"></i>
 </div>
 
@@ -13,11 +13,11 @@
     </div>
 </footer>
 
-<script src="public/js/nav.js"></script>
-<script src="public/js/waypoints.js"></script>
-<script src="public/js/aboutImg.js"></script>
-<script src="public/js/lightbox.js"></script>
-<script src="public/js/scrollTop.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/waypoints.js"></script>
+<script src="js/aboutImg.js"></script>
+<script src="js/lightbox.js"></script>
+<script src="js/scrollTop.js"></script>
 
 </body>
 </html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php include 'head.php';?>
+    <?php include 'template/head.php';?>
     <title>Mariam Khalifa</title>
 </head>
 <body>
@@ -16,8 +16,8 @@
     </ul>
     <a href="index.php" class="link-home">
         <picture class="logo">
-            <source media="(min-width: 767px)" srcset="public/images/logo.svg">
-            <img  src="public/images/logo-alt.svg" alt="logo">
+            <source media="(min-width: 767px)" srcset="images/logo.svg">
+            <img  src="images/logo-alt.svg" alt="logo">
         </picture>
     </a>
     <div class="welcome">
@@ -39,7 +39,7 @@
 I love to create and I love to tell stories that evoke powerful emotions.
 My style is simplicity paired with functionality. When I’m not working, you’ll find me reading or playing with my 2 little boys.
 </p>
-<img class="about-img" src="public/images/mariam1.jpg" alt="mariam pic">
+<img class="about-img" src="images/mariam1.jpg" alt="mariam pic">
 </section>
 <div class="skills-con">
     <div class="skills skills-m">
@@ -81,27 +81,30 @@ My style is simplicity paired with functionality. When I’m not working, you’
 <section id="development">
 <h1>Web Development Projects</h1>
 <div class="dev-projects">
-    <a href="portfolio_project.php?id=1">
-        <img class="project" data-target="1" src="public/images/animal-tracks-logo.png" alt="animal tracks logo">
-    </a>
-    <a href="portfolio_project.php?id=2">
-        <img class="project" data-target="2" src="public/images/traa-logo.png" alt="traa logo">
+    <a href="portfolio_project.php?id=7">
+        <img class="project" data-target="7" src="images/ON-summer-mobile.png" alt="animal tracks project">
     </a>
     <a href="portfolio_project.php?id=3">
-    <img class="project" data-target="3" src="public/images/red-fox-logo.png" alt="red fox logo">
+    <img class="project" data-target="3" src="images/red-fox-mobile.png" alt="red fox project">
+    </a>
+    <a href="portfolio_project.php?id=2">
+        <img class="project" data-target="2" src="images/traa-mobile.png" alt="traa project">
     </a>
     <a href="portfolio_project.php?id=4">
-        <img class="project" data-target="4" src="public/images/imagina-logo.png" alt="imagina logo">
+        <img class="project" data-target="4" src="images/imagina-mobile.png" alt="imagina project">
     </a>
-</div>
-<div class="dev-projects">
+<!-- </div>
+<div class="dev-projects"> -->
     <a href="portfolio_project.php?id=5">
-        <img class="project" data-target="5" src="public/images/irobot-logo.png" alt="irobot logo">
+        <img class="project" data-target="5" src="images/irobot-mobile.png" alt="irobot project">
     </a>
     <a href="portfolio_project.php?id=6">
-        <img class="project" data-target="6" src="public/images/fav-things-logo.png" alt="favourite things logo">
+        <img class="project" data-target="6" src="images/fav-things-mobile.png" alt="favourite things project">
     </a>
 </div>
+<a class="music-mixer-project" href="portfolio_project.php?id=1">
+    <img class="project" data-target="1" src="images/animal-tracks-desktop.png" alt="animal tracks project">
+</a>
 </section>
 
 <section id="motion">
@@ -109,25 +112,25 @@ My style is simplicity paired with functionality. When I’m not working, you’
 <div class="demo-reel">
     <div class="thumbnail" data-target="demo-reel">
         <h2 class="thumb-title">Demo Reel 2019</h2>
-        <img src="public/images/demo-reel.jpg" alt="demo reel video">
+        <img src="images/demo-reel.jpg" alt="demo reel video">
     </div>
 </div>
 <div class="motion-projects">
     <div class="thumbnail" data-target="lamps">
         <h2 class="thumb-title">Lamps Advertisement</h2>
-        <img src="public/images/lamps.jpg" alt="lamps video">
+        <img src="images/lamps.jpg" alt="lamps video">
     </div>
     <div class="thumbnail" data-target="sportsnet">
         <h2 class="thumb-title">Sportsnet Promo</h2>
-        <img src="public/images/sportsnet.jpg" alt="sportsnet video">
+        <img src="images/sportsnet.jpg" alt="sportsnet video">
     </div>
     <div class="thumbnail" data-target="smart-thermostat">
         <h2 class="thumb-title">Smart Thermostat 3D Model</h2>
-        <img src="public/images/smart-thermostat.jpg" alt="smart thermostat video">
+        <img src="images/smart-thermostat.jpg" alt="smart thermostat video">
     </div>
     <div class="thumbnail" data-target="jet-engine">
         <h2 class="thumb-title">Jet Engine 3D Model</h2>
-        <img src="public/images/jet-engine.jpg" alt="jet-engine video">
+        <img src="images/jet-engine.jpg" alt="jet-engine video">
     </div>
 </div>
 </div>
@@ -139,16 +142,16 @@ My style is simplicity paired with functionality. When I’m not working, you’
             <h2 class="video-title">Demo Reel 2019</h2>
             <p class="video-text">Created with Cinema 4D and After Effects.</p>
             <video class="video" controls>
-                <source src="public/videos/demo-reel.mp4" type="video/mp4">
-                <!-- <source src="public/videos/sportsnet.ogg" type="video/ogg">
-                <source src="public/videos/sportnet.webm" type="video/webm">
+                <source src="videos/demo-reel.mp4" type="video/mp4">
+                <!-- <source src="videos/sportsnet.ogg" type="video/ogg">
+                <source src="videos/sportnet.webm" type="video/webm">
                 Sorry, your browser doesn't support embedded videos. -->
             </video>
         </div>
 </div>
 
-<?php include 'contact.php';?>
+<?php include 'template/contact.php';?>
 
-<?php include 'footer.php';?>
+<?php include 'template/footer.php';?>
 
 

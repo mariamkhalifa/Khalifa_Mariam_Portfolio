@@ -5,7 +5,7 @@ class Database{
     private $host = 'localhost';
     private $username = 'root'; 
     private $db_name = 'db_portfolio';
-    private $password = '';
+    private $password = 'root';
 
     //people outside of object have access to public
     public $conn;

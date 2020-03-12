@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php include 'header.php';?>
+    <?php include 'template/head.php';?>
     <title>Portfolio Project\</title>
 </head>
 <body>
@@ -16,8 +16,8 @@
     </ul>
     <a href="index.php" class="link-home">
         <picture class="logo">
-            <source media="(min-width: 767px)" srcset="public/images/logo.svg">
-            <img  src="public/images/logo-alt.svg" alt="logo">
+            <source media="(min-width: 767px)" srcset="images/logo.svg">
+            <img  src="images/logo-alt.svg" alt="logo">
         </picture>
     </a>
     <!-- <ul class="dots">
@@ -31,8 +31,8 @@
 
 <?php
 //include database and object files
-include_once './config/database.php';
-include_once './objects/project.php';
+include_once 'includes/config/database.php';
+include_once 'includes/objects/project.php';
 
 // instantiate database and project object
 $database = new Database();
@@ -51,7 +51,7 @@ if($num>0):?>
 <div class="project-con">
         <h1 class="title"><?php echo $row['Name'];?></h1>
         <div class="dt-img-con">
-            <img class="dt-img" src="public/images/<?php echo $row['main_image'];?>" alt="project desktop image">
+            <img class="dt-img" src="images/<?php echo $row['main_image'];?>" alt="project desktop image">
         </div>
         <div class="desc">
             <h2>Project Description:</h2>
@@ -60,8 +60,8 @@ if($num>0):?>
             <p class="project-team"><?php echo $row['Team Members'];?></p>
         </div>
         <div class="m-img">
-            <img src="public/images/<?php echo $row['image_1'];?>" alt="project mobile image 1">
-            <img src="public/images/<?php echo $row['image_2'];?>" alt="project mobile image 2">
+            <img src="images/<?php echo $row['image_1'];?>" alt="project mobile image 1">
+            <img src="images/<?php echo $row['image_2'];?>" alt="project mobile image 2">
         </div>
 </div>
 <?php endwhile;
@@ -74,7 +74,7 @@ else:?>
 <?php endif;?>
 
 <div class="butterflies-con">
-    <img class="project-butterflies" src="public/images/butterflies.png" alt="butterflies">
+    <img class="project-butterflies" src="images/butterflies.png" alt="butterflies">
 </div>
 
 <footer id="footer">
@@ -87,7 +87,7 @@ else:?>
     </div>
 </footer>
 
-<script src="public/js/project.js"></script>
-<script src="public/js/nav.js"></script>
+<script src="js/project.js"></script>
+<script src="js/nav.js"></script>
 </body>
 </html>
