@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" type="image/png" href="../public/images/favicon.png">
+    <link rel="icon" type="image/png" href="../../images/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Manjari:700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Merienda+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../public/css/main.css">
+    <link rel="stylesheet" href="../../css/main.css">
     <script src="https://kit.fontawesome.com/cfa5b23a00.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/ScrollToPlugin.min.js"></script>
@@ -18,25 +18,26 @@
 <header id="submission-header">
     <i class="fas fa-bars fa-2x"></i>
     <ul class="main-nav">
-        <a id="link-dev" href="../index.php#development"><li>Web Development</li></a>
-        <a id="link-motion" href="../index.php#motion"><li>Motion Design</li></a>
-        <a id="link-about" href="../index.php#about"><li>About</li></a>
-        <a id="link-contact" href="../index.php#contact"><li>Contact</li></a>
+        <a id="link-dev" href="../../index.php#development"><li>Web Development</li></a>
+        <a id="link-motion" href="../../index.php#motion"><li>Motion Design</li></a>
+        <a id="link-about" href="../../index.php#about"><li>About</li></a>
+        <a id="link-contact" href="../../index.php#contact"><li>Contact</li></a>
     </ul>
-    <a href="../index.php" class="link-home">
+    <a href="../../index.php" class="link-home">
         <picture class="logo">
-            <source media="(min-width: 767px)" srcset="../public/images/logo.svg">
-            <img  src="../public/images/logo-alt.svg" alt="logo">
+            <source media="(min-width: 767px)" srcset="../../images/logo.svg">
+            <img  src="../../images/logo-alt.svg" alt="logo">
         </picture>
     </a>
 </header>
 
 <div class="submission-con">
+    
 <?php
 
 //IF THE FORM IS NOT FILLED OUT
 if(empty($_POST)){
-    echo 'no...';
+    echo 'Did you forget to fill out the form?';
     exit;
 }
 
@@ -45,7 +46,7 @@ $name = '';
 $email = '';
 $subject = '';
 $message = '';
-$recipient = 'mariam.khalifa.gabr@gmail.com';
+$recipient = 'mariamkh2512@gmail.com';
 
 if (isset($_POST['name'])) {
     $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
@@ -78,7 +79,8 @@ if(mail($recipient, $subject, $message, $headers)){
     echo '<p>Nooo! <br>Something went horribly wrong.<br> Sorry! :(</p>';
 }
 ?>
-<img class="sub-butterflies" src="../public/images/butterflies.png" alt="butterflies">
+
+<img class="sub-butterflies" src="../../images/butterflies.png" alt="butterflies">
 </div>
 
 <footer id="footer">

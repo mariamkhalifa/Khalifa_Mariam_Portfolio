@@ -115,6 +115,9 @@
 @media screen and (min-width: 1024px) {
     #project-header {
         height: 150px;
+        .link-home {
+            width: 200px !important;
+        }
     }
     .project-con {
         display: grid !important;

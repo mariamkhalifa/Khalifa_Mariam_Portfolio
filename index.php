@@ -35,15 +35,13 @@
 
 <section id="about">
 <h1>A little bit about me..</h1>
-<p class="about-text"><span>Hi there!</span><br>I’m a 2nd year interactive media design student at Fanshawe College, London, Ontario. I'm to graduate next April/2020. I'm a front-end developer who is in love with Javascript.
-I love to create and I love to tell stories that evoke powerful emotions.
-My style is simplicity paired with functionality. When I’m not working, you’ll find me reading or playing with my 2 little boys.
-</p>
+<p class="about-text"><span>Hi there!</span><br>I’m a 2nd-year interactive media design student at Fanshawe College, London, Ontario, about to graduate next April/2020. I'm a front-end developer who is in love with Javascript. As an honour-roll student, I have proven time management skills and teamwork ethic. 
+Underneath my quiet nature is an adventurer, constantly seeking a new challenge. When I’m not working, you’ll find me reading or playing with my 2 little boys.</p>
 <img class="about-img" src="images/mariam1.jpg" alt="mariam pic">
 </section>
 <div class="skills-con">
     <div class="skills skills-m">
-        <h4>Motion Design Skills</h4>
+        <h3>Motion Design Skills</h3>
         <ul>
             <li><i class="fas fa-square"></i>Cinema 4D</li>
             <li><i class="fas fa-square"></i>After Effects</li>
@@ -51,24 +49,26 @@ My style is simplicity paired with functionality. When I’m not working, you’
         </ul>
     </div>
     <div class="skills skills-dev">
-        <h4>Front-End Development Skills</h4>
+        <h3>Front-End Development Skills</h3>
         <ul>
             <li><i class="fas fa-square"></i>HTML5</li>
             <li><i class="fas fa-square"></i>CSS3</li>
             <li><i class="fas fa-square"></i>Vanilla JS</li>
             <li><i class="fas fa-square"></i>Node JS</li>
             <li><i class="fas fa-square"></i>Vue JS</li>
+            <li><i class="fas fa-square"></i>AJAX</li>
         </ul>
         <ul>
             <li><i class="fas fa-square"></i>Sass</li>
             <li><i class="fas fa-square"></i>Bootstrap</li>
             <li><i class="fas fa-square"></i>PHP</li>
+            <li><i class="fas fa-square"></i>Drupal</li>
             <li><i class="fas fa-square"></i>Python</li>
             <li><i class="fas fa-square"></i>MySQL</li>
         </ul>
     </div>
     <div class="skills skills-g">
-        <h4>Graphic Design Skills</h4>
+        <h3>Graphic Design Skills</h3>
         <ul>
             <li><i class="fas fa-square"></i>Photoshop</li>
             <li><i class="fas fa-square"></i>Illustrator</li>
@@ -83,27 +83,34 @@ My style is simplicity paired with functionality. When I’m not working, you’
 <div class="dev-projects">
     <a href="portfolio_project.php?id=7">
         <img class="project" data-target="7" src="images/ON-summer-mobile.png" alt="animal tracks project">
+        <div class="dev-overlay"><p>HTML5<br>CSS3<br>Vue.js<br>Sass</p></div>
     </a>
     <a href="portfolio_project.php?id=3">
-    <img class="project" data-target="3" src="images/red-fox-mobile.png" alt="red fox project">
+        <img class="project" data-target="3" src="images/red-fox-mobile.png" alt="red fox project">
+        <div class="dev-overlay"><p>HTML5<br>CSS3<br>Vanilla.js</p></div>
     </a>
-    <a href="portfolio_project.php?id=2">
-        <img class="project" data-target="2" src="images/traa-mobile.png" alt="traa project">
+    <a href="portfolio_project.php?id=5">
+        <img class="project" data-target="5" src="images/irobot-mobile.png" alt="irobot project">
+        <div class="dev-overlay"><p>HTML5<br>CSS3<br>Node.js<br>Heroku</p></div>
     </a>
     <a href="portfolio_project.php?id=4">
         <img class="project" data-target="4" src="images/imagina-mobile.png" alt="imagina project">
+        <div class="dev-overlay"><p>HTML5<br>CSS3<br>Vanilla.js<br>Sass</p></div>
     </a>
 <!-- </div>
 <div class="dev-projects"> -->
-    <a href="portfolio_project.php?id=5">
-        <img class="project" data-target="5" src="images/irobot-mobile.png" alt="irobot project">
-    </a>
     <a href="portfolio_project.php?id=6">
         <img class="project" data-target="6" src="images/fav-things-mobile.png" alt="favourite things project">
+        <div class="dev-overlay"><p>HTML5<br>CSS3<br>Node.js<br>Ajax</p></div>
+    </a>
+    <a href="portfolio_project.php?id=2">
+        <img class="project" data-target="2" src="images/traa-mobile.png" alt="traa project">
+        <div class="dev-overlay"><p>HTML5<br>CSS3<br>Vanilla.js</p></div>
     </a>
 </div>
 <a class="music-mixer-project" href="portfolio_project.php?id=1">
-    <img class="project" data-target="1" src="images/animal-tracks-desktop.png" alt="animal tracks project">
+    <img data-target="1" src="images/animal-tracks-desktop.png" alt="animal tracks project">
+    <div class="dev-overlay"><p>HTML5<br>CSS3<br>Vanilla.js</p></div>
 </a>
 </section>
 

@@ -79,15 +79,18 @@
         margin-right: 0 !important;
         margin-left: 0 !important;
         width: auto;
-        ul { padding-left: 20px;} 
+        ul { 
+            padding-left: 20px;
+            li { margin-top: 10px; }
+        } 
     }
     .skills-dev { 
         margin-top: 0 !important;
         display: grid;
-        grid-template-areas: "h4 h4"
+        grid-template-areas: "h3 h3"
                              "ul1 ul2";
-        h4 { 
-            grid-area: h4;
+        h3 { 
+            grid-area: h3;
             text-align: center;
         }
         .skills-dev:nth-child(2) { grid-area: ul1; } 

@@ -56,3 +56,20 @@
         box-shadow: 3px 2px 5px rgba($color: #000000, $alpha: .2);
     }
 }
+
+@media screen and (min-width: 1023px) {
+    #form {
+        input, textarea {
+            padding: 12px;
+        }
+        ::placeholder {
+            font-size: 1.2em;
+        }
+        textarea::placeholder {
+            font-size: 1.3em;
+        }
+        .submit-btn {
+            font-size: 1.5em;
+        }
+    }
+}

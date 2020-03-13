@@ -36,13 +36,21 @@
 @media screen and (min-width: 767px) {
     #submission-header {
         height: 150px;
+        .link-home {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 150px !important;
+            margin-top: 0 !important;
+        }
     }
-    .link-home {
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        width: 150px !important;
-        margin-top: 0 !important;
+}
+
+@media screen and (min-width: 1023px) {
+    #submission-header {
+        .link-home {
+            width: 200px !important;
+        }
     }
 }
 
