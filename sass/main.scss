@@ -70,18 +70,34 @@ ul, li {
     display: none;
 }
 
+.show {
+    opacity: 1 !important;
+}
+
 .link {
     cursor: pointer;
+}
+
+.main-heading {
+    font-size: 1.75em;
+    text-align: center;
+    @include m-t-80;
 }
 
 @media screen and (min-width:767px) {
     h1 { 
         font-size: 2em;
     }
+    .main-heading {
+        font-size: 2em;
+    }
 }
 
 @media screen and (min-width:1023px) {
     h1 { 
+        font-size: 2.25em;
+    }
+    .main-heading {
         font-size: 2.25em;
     }
     p, li {
@@ -122,11 +138,17 @@ ul, li {
     }
 }
 
-@keyframes slide-anim {
-    0% { transform: scale(1); opacity: 0; }
-    10% { transform: scale(1.1); opacity: 1; }
-    90% { transform: scale(1.1); opacity: 1; }
-    100% { transform: scale(1); }
+@keyframes shrink-anim {
+    0% { 
+        -webkit-transform: scale(1.1); 
+        -ms-transform: scale(1.1); 
+        transform: scale(1.1);
+    }
+    100% { 
+        -webkit-transform: scale(1); 
+        -ms-transform: scale(1); 
+        transform: scale(1); 
+    }
 }
 
 @keyframes wiggle-anim {
@@ -165,4 +187,3 @@ ul, li {
 @import "modules/_contact";
 @import "modules/_submission";
 @import "modules/_footer";
-

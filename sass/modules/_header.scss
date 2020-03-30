@@ -9,6 +9,15 @@
     animation: fade-anim 2s;
 }
 
+.header-border {
+    @include column;
+    margin: 15px;
+    border: 2px solid $purple;
+    border-bottom: none;
+    position: relative;
+    height: 100%;
+}
+
 .link-home {
     width: 100px;
     @include m-r-a;
@@ -29,8 +38,8 @@
 
 .fa-bars {
     color: $purple;
-    margin-right: 10px;
-    margin-top: 10px;
+    margin-right: 15px;
+    margin-top: 15px;
     @include m-l-a;
     cursor: pointer;
     transition: all ease .5s;
@@ -69,7 +78,10 @@
 .link:last-child { border-bottom: none; }
 
 .link:hover, .link:focus {
+    -webkit-transform: scale(.95);
+    -ms-transform: scale(.95);
     transform: scale(.95);
+    opacity: .7;
 }
 
 .welcome {
@@ -122,12 +134,8 @@
 
 @media screen and (min-width: 767px) {
     .welcome {
-        text-align: left;
+        //text-align: left;
         @include m-t-80;
-        h1 {
-            text-align: left;
-            margin-bottom: 10px;
-        }
     }
     
     .fa-bars {
@@ -187,17 +195,15 @@
     }
 
     .link-home {
-        width: 200px;
+        width: 180px;
+        top: 30px;
+        left: 35px;
     }
 
     .welcome {
         margin-top: 350px;
-        h1 {
-            font-size: 2.25em;
-        }
-        h2 {
-            font-size: 1.7em;
-        }
+        margin-left: 35px;
+        text-align: left;
     }
 
     .fa-bars {
@@ -208,8 +214,8 @@
         display: block;
         text-align: right;
         position: fixed;
-        top: 20px;
-        right: 25px;
+        top: 35px;
+        right: 40px;
         z-index: 10;
     }
 
@@ -218,12 +224,14 @@
         transition: all ease .5s;
         border: none;
         margin-top: 5px;
+        padding: 0;
     }
     .link:hover, .link:focus { 
         -webkit-transform: scale(.97);
         -ms-transform: scale(.97);
         transform: scale(.97);
         text-decoration: underline;
+        opacity: .7;
     }
 
 }

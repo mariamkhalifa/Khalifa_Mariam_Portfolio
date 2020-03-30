@@ -1,10 +1,18 @@
-.about {
+#about {
     opacity: 0;
+    transition: all .5s ease;
+}
+
+.about {
     @include column;
     align-items: center;
     @include m-r-25;
     @include m-l-25;
-    transition: all .5s ease;
+}
+
+.main-heading {
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .about-img {
@@ -25,7 +33,6 @@
     background-color: $blue;
     @include m-t-80;
     padding: 80px 25px;
-    padding-bottom: 150px;
     @include column;
     align-items: center;
 }
@@ -61,6 +68,16 @@
     @include m-t-40;
 }
 
+@media screen and (min-width: 450px) {
+    .skills-dev {
+        .ul-con {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 25px;
+        }
+    }
+}
+
 @media screen and (min-width: 767px) {
     .about {
         display: grid;
@@ -68,9 +85,11 @@
                              "p img";
         grid-gap: 40px;
     }
-    .about h1 {
+    .main-heading {
         grid-area: h1;
         text-align: center;
+        margin-right: auto;
+        margin-left: auto
     }
     .about-text {
         grid-area: p;
@@ -85,7 +104,8 @@
         @include row;
         justify-content: space-between;
         align-items: start;
-        padding-bottom: 100px
+        padding-left: 40px;
+        padding-right: 40px;
     }
     .skills {
         margin-right: 0;
@@ -98,10 +118,6 @@
     }
     .skills-dev { 
         margin-top: 0;
-        .ul-con { 
-            grid-template-columns: 1fr 1fr;
-            grid-column-gap: 25px;
-        }
     }
     .skills-g { 
         margin-top: 0;
