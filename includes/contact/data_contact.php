@@ -69,7 +69,7 @@ if (isset($_POST['message'])) {
 //SEND OUT EMAIL
 $headers = array(
     'From'=>'no-reply@mariamkhalifa.ca',
-    'Reply=To'=>$name.'<'.$email.'>'
+    'Reply-To'=>$name.'<'.$email.'>'
 );
 
 if(mail($recipient, $subject, $message, $headers)){

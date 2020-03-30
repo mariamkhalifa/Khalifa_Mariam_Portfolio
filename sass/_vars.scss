@@ -10,44 +10,44 @@ $font: 'Manjari', sans-serif;
 }
 
 @mixin row {
-    display: flex !important;
-    flex-direction: row !important;
+    display: flex;
+    flex-direction: row;
 }
 
 @mixin m-l-25 {
-    margin-left: 25px !important;
+    margin-left: 25px;
 }
 
 @mixin m-l-40 {
-    margin-left: 40px !important;
+    margin-left: 40px;
 }
 
 @mixin m-l-a {
-    margin-left: auto !important;
+    margin-left: auto;
 }
 
 @mixin m-r-25 {
-    margin-right: 25px !important;
+    margin-right: 25px;
 }
 
 @mixin m-r-40 {
-    margin-right: 40px !important;
+    margin-right: 40px;
 }
 
 @mixin m-r-a {
-    margin-right: auto !important;
+    margin-right: auto;
 }
 
 @mixin m-t-40 {
-    margin-top: 40px !important;
+    margin-top: 40px;
 }
 
 @mixin m-t-80 {
-    margin-top: 80px !important;
+    margin-top: 80px;
 }
 
 @mixin m-t-100 {
-    margin-top: 100px !important;
+    margin-top: 100px;
 }
 
 @mixin rotate-90 {
