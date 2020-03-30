@@ -88,109 +88,164 @@
 </section>
 
 <section id="development">
-<h2 class="main-heading">Web Development Projects</h2>
-<div class="dev-projects">
-    <a href="portfolio_project.php?id=7">
-        <img class="project" data-target="7" src="images/ON-summer-mobile.png" alt="Ontario summer project">
-        <div class="dev-popover-outer">
-            <div class="dev-popover-inner">
-                <h4 class="project-title">Ontario Summer</h4>
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>Vue.js</li>
-                    <li>Sass</li>
-                </ul>
+    <div class="development">
+        <h2 class="main-heading">Web Development Projects</h2>
+
+        <div class="dev-projects">
+            <a class="project" href="#">
+                <img class="project-img" src="images/roku-mobile.png" alt="roku flashback project">
+                <div class="dev-popover-outer">
+                    <div class="dev-popover-inner">
+                        <h3>Roku Flashback</h3>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>Vue.js</li>
+                            <li>Sass</li>
+                            <li>Ajax</li>
+                            <li>PHP</li>
+                            <li>MySql</li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+
+            <a class="project" href="#">
+                <img class="project-img" src="images/kin-mobile.png" alt="keep it neutral project">
+                <div class="dev-popover-outer">
+                    <div class="dev-popover-inner">
+                        <h3>Keep It Neutral</h3>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>Vue.js</li>
+                            <li>Sass</li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+
+            <a class="project" href="#">
+                <img class="project-img" src="images/mmp-mobile.png" alt="MMP project">
+                <div class="dev-popover-outer">
+                    <div class="dev-popover-inner">
+                        <h3>M Media Player</h3>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>Vue.js</li>
+                            <li>Sass</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+
+            <a class="project" href="portfolio_project.php?id=7">
+                <img class="project-img" data-target="7" src="images/ON-summer-mobile.png" alt="Ontario summer project">
+                <div class="dev-popover-outer">
+                    <div class="dev-popover-inner">
+                        <h3>Ontario Summer</h3>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>Vue.js</li>
+                            <li>Sass</li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+
+            <a class="project red-fox" href="portfolio_project.php?id=3">
+                <img class="project-img" data-target="3" src="images/red-fox-mobile.png" alt="red fox project">
+                <div class="dev-popover-outer">
+                    <div class="dev-popover-inner">
+                        <h3>Red Fox</h3>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>Vanilla.js</li>
+                            <li>PHP</li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+
+            <a class="project" href="portfolio_project.php?id=5">
+                <img class="project-img" data-target="5" src="images/irobot-mobile.png" alt="irobot project">
+                <div class="dev-popover-outer">
+                    <div class="dev-popover-inner">
+                        <h3>Roomba Robot Vaccuum</h3>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>Node.js</li>
+                            <li>Bootstrap</li>
+                            <li>Heroku</li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+
+            <a class="project" href="portfolio_project.php?id=4">
+                <img class="project-img" data-target="4" src="images/imagina-mobile.png" alt="imagina project">
+                <div class="dev-popover-outer">
+                    <div class="dev-popover-inner">
+                        <h3>Imagina</h3>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>Vanilla.js</li>
+                            <li>Sass</li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+        
+            <a class="project" href="portfolio_project.php?id=6">
+                <img class="project-img" data-target="6" src="images/fav-things-mobile.png" alt="favourite things project">
+                <div class="dev-popover-outer">
+                    <div class="dev-popover-inner">
+                        <h3>Favourite Things</h3>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>Node.js</li>
+                            <li>Ajax</li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+
+            <a class="project" href="portfolio_project.php?id=2">
+                <img class="project-img" data-target="2" src="images/traa-mobile.png" alt="traa project">
+                <div class="dev-popover-outer">
+                    <div class="dev-popover-inner">
+                        <h3>TRAA</h3>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>Vanilla.js</li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <a class="project animal-tracks" href="portfolio_project.php?id=1">
+            <img data-target="1" src="images/animal-tracks-desktop.png" alt="animal tracks project">
+            <div class="dev-popover-outer">
+                <div class="dev-popover-inner">
+                    <h3>Animal Tracks</h3>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Vanilla.js</li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </a>
-    <a href="portfolio_project.php?id=3">
-        <img class="project" data-target="3" src="images/red-fox-mobile.png" alt="red fox project">
-        <div class="dev-overlay-outer">
-            <div class="dev-popover-inner">
-                <h4 class="project-title">Red Fox</h4>
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>Vanilla.js</li>
-                    <li>PHP</li>
-                </ul>
-            </div>
-        </div>
-    </a>
-    <a href="portfolio_project.php?id=5">
-        <img class="project" data-target="5" src="images/irobot-mobile.png" alt="irobot project">
-        <div class="dev-overlay-outer">
-            <div class="dev-popover-inner">
-                <h4 class="project-title">Roomba Robot Vaccuum</h4>
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>Node.js</li>
-                    <li>Bootstrap</li>
-                    <li>Heroku</li>
-                </ul>
-            </div>
-        </div>
-    </a>
-    <a href="portfolio_project.php?id=4">
-        <img class="project" data-target="4" src="images/imagina-mobile.png" alt="imagina project">
-        <div class="dev-overlay-outer">
-            <div class="dev-popover-inner">
-                <h4 class="project-title">Imagina</h4>
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>Vanilla.js</li>
-                    <li>Sass</li>
-                </ul>
-            </div>
-        </div>
-    </a>
-<!-- </div>
-<div class="dev-projects"> -->
-    <a href="portfolio_project.php?id=6">
-        <img class="project" data-target="6" src="images/fav-things-mobile.png" alt="favourite things project">
-        <div class="dev-overlay-outer">
-            <div class="dev-popover-inner">
-                <h4 class="project-title">Favourite Things</h4>
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>Node.js</li>
-                    <li>Ajax</li>
-                </ul>
-            </div>
-        </div>
-    </a>
-    <a href="portfolio_project.php?id=2">
-        <img class="project" data-target="2" src="images/traa-mobile.png" alt="traa project">
-        <div class="dev-overlay-outer">
-            <div class="dev-popover-inner">
-                <h4 class="project-title">TRAA</h4>
-                <p>HTML5<br>CSS3<br>Vanilla.js</p>
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>Vanilla.js</li>
-                </ul>
-            </div>
-        </div>
-    </a>
-</div>
-<a class="project animal-tracks" href="portfolio_project.php?id=1">
-    <img data-target="1" src="images/animal-tracks-desktop.png" alt="animal tracks project">
-    <div class="dev-overlay-outer">
-        <div class="dev-popover-inner">
-            <h4 class="project-title">Animal Tracks</h4>
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>Vanilla.js</li>
-            </ul>
-        </div>
+        </a>
     </div>
-</a>
 </section>
 
 <section id="motion">
@@ -198,25 +253,25 @@
 <div class="demo-reel">
     <div class="thumbnail" data-target="demo-reel">
         <h2 class="thumb-title">Demo Reel 2019</h2>
-        <img src="images/demo-reel.jpg" alt="demo reel video">
+        <img class="thumb-img" src="images/demo-reel.jpg" alt="demo reel video">
     </div>
 </div>
 <div class="motion-projects">
     <div class="thumbnail" data-target="lamps">
         <h2 class="thumb-title">Lamps Advertisement</h2>
-        <img src="images/lamps.jpg" alt="lamps video">
+        <img class="thumb-img" src="images/lamps.jpg" alt="lamps video">
     </div>
     <div class="thumbnail" data-target="sportsnet">
         <h2 class="thumb-title">Sportsnet Promo</h2>
-        <img src="images/sportsnet.jpg" alt="sportsnet video">
+        <img class="thumb-img" src="images/sportsnet.jpg" alt="sportsnet video">
     </div>
     <div class="thumbnail" data-target="smart-thermostat">
         <h2 class="thumb-title">Smart Thermostat 3D Model</h2>
-        <img src="images/smart-thermostat.jpg" alt="smart thermostat video">
+        <img class="thumb-img" src="images/smart-thermostat.jpg" alt="smart thermostat video">
     </div>
     <div class="thumbnail" data-target="jet-engine">
         <h2 class="thumb-title">Jet Engine 3D Model</h2>
-        <img src="images/jet-engine.jpg" alt="jet-engine video">
+        <img class="thumb-img" src="images/jet-engine.jpg" alt="jet-engine video">
     </div>
 </div>
 </div>
@@ -241,17 +296,17 @@
     <p>You can use this contact form to get in touch. I'll get back to you within 2 business days. 
     <br>Unless, of course, I am unable to do so!</p>
     <form id="form" action="includes/contact/data_contact.php" method="post">
-        <label for="u-name"></label>
-        <input id="u-name" type="text" name="name" placeholder="Name: Harry Potter" required>
+        <label for="u-name">Name:</label>
+        <input id="u-name" type="text" name="name" placeholder="e.g. Harry Potter" required>
 
-        <label for="u-email"></label>
-        <input id="u-email" type="email" name="email" placeholder="Email: harry@hogwarts.edu" required>
+        <label for="u-email">Email:</label>
+        <input id="u-email" type="email" name="email" placeholder="e.g. harry@hogwarts.edu" required>
 
-        <label for="u-subject"></label>
-        <input id="u-subject" type="text" name="subject" placeholder="Subject.." required>
+        <label for="u-subject">Subject:</label>
+        <input id="u-subject" type="text" name="subject" placeholder="e.g. Spells" required>
 
-        <label for="u-message"></label>
-        <textarea id="u-message" name="message" Placeholder="Message.." rows="11" required></textarea>
+        <label for="u-message">Message:</label>
+        <textarea id="u-message" name="message" Placeholder="I'd like to say..." rows="11" required></textarea>
 
         <button class="submit-btn" type="submit">Submit</button>
     </form>
