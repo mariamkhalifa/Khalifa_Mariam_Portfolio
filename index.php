@@ -7,78 +7,85 @@
 <body>
 <h1 class="hidden">Mariam Khalifa</h1>
 <header id="main-header">
-    <h2 class="hidden">Main header</h2>
-    <i class="fas fa-bars fa-2x"></i>
-    <ul class="main-nav">
-        <li class="link"><a id="link-about"  href="#about">About</a></li>
-        <li class="link"><a id="link-dev"  href="#development">Web Development</a></li>
-        <li class="link"><a id="link-motion"  href="#motion">Motion Design</a></li>
-        <li class="link"><a id="link-contact"  href="#contact">Contact</a></li>
-    </ul>
-    <a href="index.php" class="link-home">
-        <picture class="logo">
-            <source media="(min-width: 767px)" srcset="images/logo.svg">
-            <img  src="images/logo-alt.svg" alt="logo">
-        </picture>
-    </a>
-    <p class="welcome">
-        <span class="large">Hello,</span>
-        <span class="small">I'm a front-end developer</span>
-        <span class="small">This is my portfolio.</span>
-    </p>
-    <ul class="dots">
-        <li class="dot">.</li>
-        <li class="dot">.</li>
-        <li class="dot">.</li>
-    </ul>
-    <i class="fas fa-chevron-down fa-2x"></i>
+    <div class="header-border">
+        <h2 class="hidden">Main header</h2>
+        <i class="fas fa-bars fa-2x"></i>
+        <ul class="main-nav">
+            <li class="link"><a id="link-about"  href="#about">About</a></li>
+            <li class="link"><a id="link-dev"  href="#development">Web Development</a></li>
+            <li class="link"><a id="link-motion"  href="#motion">Motion Design</a></li>
+            <li class="link"><a id="link-contact"  href="#contact">Contact</a></li>
+        </ul>
+        <a href="index.php" class="link-home">
+            <picture class="logo">
+                <source media="(min-width: 767px)" srcset="images/logo.svg">
+                <img  src="images/logo-alt.svg" alt="logo">
+            </picture>
+        </a>
+        <p class="welcome">
+            <span class="large">Hello,</span>
+            <span class="small">I'm a front-end developer</span>
+            <span class="small">This is my portfolio.</span>
+        </p>
+        <ul class="dots">
+            <li class="dot">.</li>
+            <li class="dot">.</li>
+            <li class="dot">.</li>
+        </ul>
+        <i class="fas fa-chevron-down fa-2x"></i>
+    </div>
 </header>
 
 <section id="about">
-<h2 class="main-heading">A little bit about me..</h2>
-<p class="about-text"><span>Hi there!</span><br>I’m a 2nd-year interactive media design student at Fanshawe College, London, Ontario, about to graduate next April/2020. I'm a front-end developer who is in love with Javascript. As an honour-roll student, I have proven time management skills and teamwork ethic. 
-Underneath my quiet nature is an adventurer, constantly seeking a new challenge. When I’m not working, you’ll find me reading or playing with my 2 little boys.</p>
-<img class="about-img" src="images/mariam1.jpg" alt="mariam pic">
+    <div class="about">
+        <h2 class="main-heading">A little bit about me..</h2>
+        <p class="about-text"><span>Hi there!</span><br>I’m a 2nd-year interactive media design student at Fanshawe College, London, Ontario, about to graduate next April/2020. I'm a front-end developer who is in love with Javascript. As an honour-roll student, I have proven time management skills and teamwork ethic. 
+        Underneath my quiet nature is an adventurer, constantly seeking a new challenge. When I’m not working, you’ll find me reading or playing with my 2 little boys.</p>
+        <img class="about-img" src="images/mariam1.jpg" alt="mariam pic">
+    </div>
+        
+    <div class="skills-con">
+        <div class="skills skills-m">
+            <h3 class="skill-title">Motion Design Skills</h3>
+            <ul class="ul-con">
+                <li><i class="fas fa-square"></i>Cinema 4D</li>
+                <li><i class="fas fa-square"></i>After Effects</li>
+                <li><i class="fas fa-square"></i>Premiere</li>
+            </ul>
+        </div>
+
+        <div class="skills skills-dev">
+            <h3 class="skill-title">Front-End Development Skills</h3>
+            <ul class="ul-con">
+                <li><i class="fas fa-square"></i>HTML5</li>
+                <li><i class="fas fa-square"></i>CSS3</li>
+                <li><i class="fas fa-square"></i>Vanilla.js</li>
+                <li><i class="fas fa-square"></i>Node.js</li>
+                <li><i class="fas fa-square"></i>Vue.js</li>
+                <li><i class="fas fa-square"></i>AJAX</li>
+            <!-- </ul>
+            <ul> -->
+                <li><i class="fas fa-square"></i>Sass</li>
+                <li><i class="fas fa-square"></i>Bootstrap</li>
+                <li><i class="fas fa-square"></i>PHP</li>
+                <li><i class="fas fa-square"></i>Drupal</li>
+                <li><i class="fas fa-square"></i>Python</li>
+                <li><i class="fas fa-square"></i>MySQL</li>
+                <li><i class="fas fa-square"></i>Git</li>
+            </ul>
+        </div>
+
+        <div class="skills skills-g">
+            <h3 class="skill-title">Graphic Design Skills</h3>
+            <ul class="ul-con">
+                <li><i class="fas fa-square"></i>Photoshop</li>
+                <li><i class="fas fa-square"></i>Illustrator</li>
+                <li><i class="fas fa-square"></i>XD</li>
+                <li><i class="fas fa-square"></i>InDesign</li>
+            </ul>
+        </div>
+    </div>
 </section>
-<div class="skills-con">
-    <div class="skills skills-m">
-        <h3 class="skill-title">Motion Design Skills</h3>
-        <ul>
-            <li><i class="fas fa-square"></i>Cinema 4D</li>
-            <li><i class="fas fa-square"></i>After Effects</li>
-            <li><i class="fas fa-square"></i>Premiere</li>
-        </ul>
-    </div>
-    <div class="skills skills-dev">
-        <h3 class="skill-title">Front-End Development Skills</h3>
-        <ul>
-            <li><i class="fas fa-square"></i>HTML5</li>
-            <li><i class="fas fa-square"></i>CSS3</li>
-            <li><i class="fas fa-square"></i>Vanilla.js</li>
-            <li><i class="fas fa-square"></i>Node.js</li>
-            <li><i class="fas fa-square"></i>Vue.js</li>
-            <li><i class="fas fa-square"></i>AJAX</li>
-        <!-- </ul>
-        <ul> -->
-            <li><i class="fas fa-square"></i>Sass</li>
-            <li><i class="fas fa-square"></i>Bootstrap</li>
-            <li><i class="fas fa-square"></i>PHP</li>
-            <li><i class="fas fa-square"></i>Drupal</li>
-            <li><i class="fas fa-square"></i>Python</li>
-            <li><i class="fas fa-square"></i>MySQL</li>
-            <li><i class="fas fa-square"></i>Git</li>
-        </ul>
-    </div>
-    <div class="skills skills-g">
-        <h3 class="skill-title">Graphic Design Skills</h3>
-        <ul>
-            <li><i class="fas fa-square"></i>Photoshop</li>
-            <li><i class="fas fa-square"></i>Illustrator</li>
-            <li><i class="fas fa-square"></i>XD</li>
-            <li><i class="fas fa-square"></i>InDesign</li>
-        </ul>
-    </div>
-</div>
 
 <section id="development">
 <h2 class="main-heading">Web Development Projects</h2>
