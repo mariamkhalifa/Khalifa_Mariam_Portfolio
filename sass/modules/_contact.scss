@@ -4,63 +4,69 @@
     @include column;
     align-items: center;
     @include m-t-80;
-    padding: 0 25px 30px 25px;;
+    padding: 0 25px 180px 25px;;
     background-color: $blue;
     p {
         width: 80%;
-        max-width: 670px;
         text-align: center;
         margin-top: 20px;
+        max-width: 500px;
     }
 }
 
 #form {
     width: 80%;
-    max-width: 670px;
+    max-width: 500px;
     @include column;
     @include m-t-40;
+    label {
+        margin-bottom: 5px;
+        margin-top: 15px;
+        font-size: 1em;
+    }
     input, textarea {
         border: 1px solid $purple;
         background-color: $blue;
-        padding: 8px;
+        padding: 13px;
         border-radius: 5px;
         margin-bottom: 10px;
     }
     ::placeholder {
         font-family: $font;
-        font-size: .9em;
+        font-size: 1em;
         color: $purple;
         opacity: .8;
     }
-    textarea::placeholder {
-        font-size: .8em;
-    }
-    .submit-btn {
-        border: none;
-        background-color: $purple;
-        padding: 15px;
-        border-radius: 5px;
-        margin-top: 15px;
-        font-family: $font;
-        font-size: 1em;
-        color: white;
-        cursor: pointer;
-        transition: all .5s  ease;
-    }
-    .submit-btn:hover {
-        color: $purple;
-        background-color: rgba($color: $nude, $alpha: .7);
-        -webkit-transform: scale(1.01);
-        -ms-transform: scale(1.01);
-        transform: scale(1.01);
-        box-shadow: 3px 2px 5px rgba($color: #000000, $alpha: .2);
-    }
+}
+
+.submit-btn {
+    border: none;
+    background-color: $purple;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 25px;
+    font-family: $font;
+    font-size: 1em;
+    color: white;
+    cursor: pointer;
+    transition: all .5s  ease;
+}
+
+.submit-btn:hover, .submit-btn:focus {
+    opacity: .9;
+    -webkit-transform: scale(.99);
+    -ms-transform: scale(.99);
+    transform: scale(.99);
+    box-shadow: 3px 2px 5px rgba($color: #000000, $alpha: .2);
 }
 
 @media screen and (min-width: 1023px) {
     #form {
+        label {
+            margin-bottom: 8px;
+        }
         input, textarea {
-            padding: 12px;
+            padding: 15px;
         }
         ::placeholder {
             font-size: 1.2em;

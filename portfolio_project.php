@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
     <?php include 'template/head.php';?>
-    <title>Portfolio Project\</title>
+    <title>Portfolio Project</title>
 </head>
 <body>
-<h1 class="hidden">Portfolio Project/</h1>
-<header id="project-header">
+<h1 class="hidden">Portfolio Project</h1>
+
+<?php include 'template/header.php';?>
+<!-- <header id="project-header">
     <i class="fas fa-bars fa-2x"></i>
     <ul class="main-nav">
         <a id="link-dev" href="index.php#development"><li>Web Development</li></a>
@@ -20,14 +22,7 @@
             <img  src="images/logo-alt.svg" alt="logo">
         </picture>
     </a>
-    <!-- <ul class="dots">
-        <li class="dot">.</li>
-        <li class="dot">.</li>
-        <li class="dot">.</li>
-    </ul> -->
-    <!-- <i class="fas fa-chevron-down fa-2x"></i> -->
-    <!-- <img class="hero" src="images/butterflies.png" alt="butterflies"> -->
-</header>
+</header> -->
 
 <?php
 //include database and object files
@@ -77,7 +72,7 @@ else:?>
     <img class="project-butterflies" src="images/butterflies.png" alt="butterflies">
 </div>
 
-<footer id="footer">
+<!-- <footer id="footer">
     <h1 class="hidden">Main Footer</h1>
     <p>&copy; Mariam Khalifa 2019.</p>
     <div class="social-media">
@@ -85,9 +80,13 @@ else:?>
         <a href="https://www.linkedin.com/in/mariamkhalifa/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
         <a href="https://vimeo.com/mariamkhalifa" target="_blank"><i class="fab fa-vimeo fa-2x"></i></a>
     </div>
-</footer>
+</footer> -->
+
+<?php include 'template/footer.php'; ?>
 
 <script src="js/project.js"></script>
 <script src="js/nav.js"></script>
+<script src="js/scrollTop.js"></script>
+
 </body>
 </html>

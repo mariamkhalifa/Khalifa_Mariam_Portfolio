@@ -3,15 +3,10 @@
     transition: all .5s ease;
     @include m-t-80;
     @include column;
+    margin-right: 50px;
+    margin-left: 50px;
     align-items:  center;
-}
-
-.demo-reel {
-    padding: 0 25px;
-}
-
-.motion-projects {
-    padding: 0 25px;
+    border-top: 2px $purple solid;
 }
 
 .thumbnail {
@@ -19,13 +14,17 @@
     align-items: center;
     @include m-t-80;
     cursor: pointer;
-    transition: all 1s ease;
 }
 
-.thumbnail:hover {
-    -webkit-transform: scale(1.02);
-    -ms-transform: scale(1.02);
-    transform: scale(1.02);
+.thumb-img {
+    transition: all .5s ease;
+}
+
+.thumb-img:hover, .thumb-img:focus {
+    -webkit-transform: scale(.99);
+    -ms-transform: scale(.99);
+    transform: scale(.99);
+    opacity: .9;
 }
 
 .thumb-title {
@@ -94,6 +93,6 @@
     .motion-projects {
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        grid-gap: 20px;
+        grid-gap: 40px;
     }
 }

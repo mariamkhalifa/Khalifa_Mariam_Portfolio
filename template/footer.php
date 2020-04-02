@@ -9,12 +9,3 @@
     <img class="butterflies" src="images/butterflies.png" alt="butterfly">
     <i class="fas fa-chevron-up fa-3x"></i>
 </footer>
-
-<script src="js/nav.js"></script>
-<script src="js/waypoints.js"></script>
-<script src="js/aboutImg.js"></script>
-<script src="js/lightbox.js"></script>
-<script src="js/scrollTop.js"></script>
-
-</body>
-</html>

@@ -18,36 +18,30 @@
         transition: all ease .5s;
     }
     a:hover, a:focus {
-        color: rgba($color: $nude, $alpha: .6);
-        -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        transform: scale(1.1);
+        opacity: .9;
+        -webkit-transform: scale(.95);
+        -ms-transform: scale(.95);
+        transform: scale(.95);
     }
 }
 
-//.bottom {
-    //background-color: $blue;
-    //padding-top: 20px;
-    //position:  relative;
-    //@include row;
-    //justify-content: space-between;
-//}
+.fa-chevron-up { 
+    color: $purple;
+    cursor: pointer;
+    margin-top: 20px;
+    position: absolute;
+    top: -110px;
+    right: 30px;
+    transition: all .5s ease;
+}
 
-// .fa-chevron-up { 
-//     color: $purple;
-//     cursor: pointer;
-//     @include m-r-25;
-//     margin-top: 20px;
-//     transition: all 1s ease;
-// }
-
-// .fa-chevron-up:hover {
-//     -webkit-transform: scale(1.2);
-//     -ms-transform: scale(1.2);
-//     transform: scale(1.2);
-//     color: rgba($color: $nude, $alpha: .8);
-//     text-shadow: 3px 2px 4px rgba($color: #000000, $alpha: .3);
-// }
+.fa-chevron-up:hover, .fa-chevron-up:focus {
+    -webkit-transform: scale(.92);
+    -ms-transform: scale(.92);
+    transform: scale(.92);
+    opacity: .8;
+    text-shadow: 3px 2px 4px rgba($color: #000000, $alpha: .3);
+}
 
 .butterflies {
     position: absolute;
