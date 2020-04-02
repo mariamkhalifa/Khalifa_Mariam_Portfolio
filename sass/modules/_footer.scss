@@ -35,7 +35,7 @@
     transition: all .5s ease;
 }
 
-.fa-chevron-up:hover {
+.fa-chevron-up:hover, .fa-chevron-up:focus {
     -webkit-transform: scale(.92);
     -ms-transform: scale(.92);
     transform: scale(.92);

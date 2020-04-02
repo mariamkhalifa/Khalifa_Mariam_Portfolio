@@ -19,7 +19,7 @@
 }
 
 .link-home {
-    width: 100px;
+    width: 60px;
     @include m-r-a;
     @include m-l-a;
     margin-top: 20px;
@@ -149,7 +149,7 @@
         position: absolute;
         top: 20px;
         left: 20px;
-        width: 150px;
+        //width: 100px;
         margin-top: 0;
     }
 
@@ -197,7 +197,7 @@
     }
 
     .link-home {
-        width: 180px;
+        //width: 180px;
         top: 30px;
         left: 35px;
     }

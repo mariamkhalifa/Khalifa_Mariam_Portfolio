@@ -1,21 +1,55 @@
-#project-header {
-    @include column;
-    background-color: $blue;
-    height: 50vh;
-    .link-home {
-        width: 100px;
-        @include m-r-a;
-        @include m-l-a;
-        margin-top: 20px;
-    }
+// #project-header {
+//     @include column;
+//     background-color: $blue;
+//     height: 50vh;
+//     .link-home {
+//         width: 100px;
+//         @include m-r-a;
+//         @include m-l-a;
+//         margin-top: 20px;
+//     }
     
-    .logo {
-        width: 100%;
-    }
+//     .logo {
+//         width: 100%;
+//     }
+// }
+
+.dev-lightbox {
+    // opacity: 0;
+    // transition: all ease .5s;
+    display: none;
+    position: absolute;
+    top: 0;
+    background-color: white;
+    z-index: 500;
+}
+
+.close-dev-lightbox {
+    font-weight: bolder;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+.dev-logo {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 70px;
 }
 
 .project-con {
-    h1 { padding: 0 50px; }
+    margin-top: 120px;
+    margin-bottom: 150px;
+    @include column;
+    align-items: center;
+    .title { 
+        padding: 0 50px;
+        font-size: 1.7em;
+        font-weight: bold;
+    }
 }
 
 .dt-img-con {
@@ -29,13 +63,15 @@
 .desc {
     @include m-r-25;
     @include m-l-25;
-    h2 {
+    h4 {
         @include m-t-80;
+        font-size: 1.3em;
     }
     span { 
         color: #666666;
         font-size: 0.85em; 
     }
+    p { margin-top: 20px; }
 }
 
 .m-img {
@@ -81,16 +117,16 @@
 }
 
 @media screen and (min-width: 767px) {
-    #project-header {
-        height: 100px;
-        .link-home {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            width: 150px !important;
-            margin-top: 0 !important;
-        }
-    }
+    // #project-header {
+    //     height: 100px;
+    //     .link-home {
+    //         position: absolute;
+    //         top: 20px;
+    //         left: 20px;
+    //         width: 150px !important;
+    //         margin-top: 0 !important;
+    //     }
+    // }
     
     .project-con {
         @include m-r-25;
@@ -100,10 +136,10 @@
     .m-img {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10%;
         img { width: 80%; }
         img:last-child {
-            margin-top: 0 !important;
-            @include m-l-40;
+            margin-top: 0;
         }
     }
 
@@ -112,33 +148,42 @@
     }
 }
 
-@media screen and (min-width: 1024px) {
-    #project-header {
-        height: 150px;
-        .link-home {
-            width: 200px !important;
-        }
-    }
+@media screen and (min-width: 900px) {
+    // #project-header {
+    //     height: 150px;
+    //     .link-home {
+    //         width: 200px !important;
+    //     }
+    // }
+
     .project-con {
-        display: grid !important;
-        grid-template-areas: "h1 h1"
+        display: grid;
+        grid-template-areas: "title title"
                              "dt-img desc"
                              "m-img m-img";
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 100px 500px auto;
-        grid-gap: 40px;
-        h1 {
-            grid-area: h1;
-            @include m-t-100;
+        grid-gap: 5%;
+        margin-bottom: 250px;
+        .title {
+            grid-area: title;
+            justify-self: center;
+            font-size: 2em;
+            margin: 0;
+            padding: 0;
         }
         .dt-img-con {
             grid-area: dt-img;
-            margin-top: 50px !important;
+            margin: 0;
+            padding: 0;
+            align-self: start;
         }
         .desc {
             grid-area: desc;
-            margin-top: 0 !important;
-            h2 { margin-top: 50px !important; }
+            align-self: start;
+            margin: 0;
+            padding: 0;
+            h4 { margin-top: 0; }
         }
         .m-img {
             grid-area: m-img;
