@@ -1,29 +1,50 @@
 #main-header {
     height: 100vh;
-    background-image: url(../images/hero-small1.jpg);
+    background-image: url(../images/sky.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     @include column;
-    animation: fade-anim 2s;
+    //animation: fade-anim 2s;
+}
+
+.sky {
+    position: absolute;
+    top: 0;
+}
+
+.mount {
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    animation: intro 4s;
+    background-position: center;
+    background-size: cover;
+    transition: all 1s ease-in-out;
 }
 
 .header-border {
     @include column;
-    margin: 15px;
-    border: 2px solid $purple;
+    margin: 20px;
+    border: 2px solid $secondary;
     border-bottom: none;
     position: relative;
     height: 100%;
+    // transition: all ease .5s;
+    // animation: fade 1s backwards;
+    // animation-delay: 2.5s;
 }
 
 .link-home {
-    width: 60px;
-    @include m-r-a;
-    @include m-l-a;
-    margin-top: 20px;
+    width: 40px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    //margin-top: 20px;
     transition: all .5s ease;
+    animation: fade 1s backwards;
+    animation-delay: 2.5s;
 }
 
 .link-home:hover, .link-home:focus {
@@ -37,12 +58,14 @@
 }
 
 .fa-bars {
-    color: $purple;
-    margin-right: 15px;
-    margin-top: 15px;
-    @include m-l-a;
+    color: $primary;
+    position: absolute;
+    top: 20px;
+    right: 20px;
     cursor: pointer;
     transition: all ease .5s;
+    animation: fade 1s backwards;
+    animation-delay: 2.5s;
 }
 
 .fa-bars:hover, .fa-bars:focus {
@@ -60,12 +83,15 @@
 }
 
 .main-nav.visible {
+    position: absolute;
+    right: 35px;
+    width: 50%;
     @include column;
     text-align: center;
 }
 
 .link {
-    color: $purple;
+    color: $primary;
     transition: all ease .5s;
     border-bottom: #ccc 1px solid;
     margin-top: 10px;
@@ -87,22 +113,23 @@
 .welcome {
     @include column;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 200px;
     @include m-l-25;
     @include m-r-25;
-    //text-shadow: 2px 2px 2px rgba($blue, .5);
-    background-color: rgba($blue, .4);
+    //text-shadow: 2px 2px 2px rgba($secondary, .5);
+    //background-color: rgba($secondary, .4);
+    animation: rise 2s forwards;
     span {
         display: block;
     }
     .large {
         font-size: 2em;
         margin-top: 20px;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
     }
     .small { 
         font-size: 1.5em;
-        margin-top: 5px;
+        margin-top: 8px;
     }
 }
 
@@ -111,7 +138,7 @@
 }
 
 .fa-chevron-down {
-    color: $purple; 
+    color: $primary; 
     position: absolute;
     bottom: 20px;
     left: 50%;
@@ -122,22 +149,22 @@
 }
 
 @media screen and (min-width: 401px) {
-    #main-header {
-        background-image: url(../images/hero-small2.jpg);
-    }
+    // #main-header {
+    //     background-image: url(../images/hero-small2.jpg);
+    // }
 }
 
 @media screen and (min-width: 513px) {
-    #main-header {
-        background-image: url(../images/hero-medium.jpg);
-    }
+    // #main-header {
+    //     background-image: url(../images/hero-medium.jpg);
+    // }
 }
 
 @media screen and (min-width: 767px) {
     .welcome {
         //text-align: left;
         @include m-t-80;
-        background-color: rgba($blue, 0);
+        background-color: rgba($secondary, 0);
     }
     
     .fa-bars {
@@ -177,7 +204,7 @@
         li {
             padding: 0;
             margin: 0;
-            color: $purple;
+            color: $primary;
             line-height: .5em;
         }
     }
@@ -192,9 +219,9 @@
 }
 
 @media screen and (min-width: 1024px) {
-    #main-header {
-        background-image: url(../images/hero-large.jpg);
-    }
+    // #main-header {
+    //     background-image: url(../images/hero-large.jpg);
+    // }
 
     .link-home {
         //width: 180px;
@@ -222,7 +249,7 @@
     }
 
     .link { 
-        color: $purple;
+        color: $primary;
         transition: all ease .5s;
         border: none;
         margin-top: 5px;

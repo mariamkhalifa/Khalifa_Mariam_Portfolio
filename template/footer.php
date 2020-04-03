@@ -6,6 +6,6 @@
         <a href="https://www.linkedin.com/in/mariamkhalifa/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
         <a href="https://vimeo.com/mariamkhalifa" target="_blank"><i class="fab fa-vimeo fa-2x"></i></a>
     </div>
-    <img class="butterflies" src="images/butterflies.png" alt="butterfly">
+    <img class="" src="" alt="">
     <i class="fas fa-chevron-up fa-3x"></i>
 </footer>

@@ -4,8 +4,8 @@
     @include column;
     align-items: center;
     @include m-t-80;
-    padding: 0 25px 180px 25px;;
-    background-color: $blue;
+    padding: 0 25px 180px 25px;
+    background-color: $grey;
     p {
         width: 80%;
         text-align: center;
@@ -20,28 +20,28 @@
     @include column;
     @include m-t-40;
     label {
-        margin-bottom: 5px;
+        margin-bottom: 8px;
         margin-top: 15px;
         font-size: 1em;
     }
     input, textarea {
-        border: 1px solid $purple;
-        background-color: $blue;
+        border: 1px solid $primary;
+        background-color: $grey;
         padding: 13px;
         border-radius: 5px;
         margin-bottom: 10px;
     }
     ::placeholder {
         font-family: $font;
-        font-size: 1em;
-        color: $purple;
+        font-size: 1.1em;
+        color: $primary;
         opacity: .8;
     }
 }
 
 .submit-btn {
     border: none;
-    background-color: $purple;
+    background-color: $primary;
     padding: 15px;
     border-radius: 5px;
     margin-top: 25px;

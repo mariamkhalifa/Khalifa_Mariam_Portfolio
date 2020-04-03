@@ -16,7 +16,9 @@ if (mediaQuery1.matches) {
 
 function expandNav() {
     burger.classList.toggle('rotated');
-    mainNav.classList.toggle('visible');
+	mainNav.classList.toggle('visible');
+	// gsap.from(mainNav, {opacity: 0, duration: .5, ease: 'power4'});
+	// gsap.to(mainNav, {opacity: 1, duration: .5, ease: 'power4'});
 }
 
 function scrollToAbout(e){

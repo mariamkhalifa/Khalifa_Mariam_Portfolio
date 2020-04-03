@@ -30,11 +30,29 @@
 }
 
 .skills-con {
-    background-color: $blue;
+    background-color: $grey;
     @include m-t-80;
     padding: 80px 25px;
+    padding-top: 100px;
     @include column;
     align-items: center;
+    position: relative;
+}
+
+.vine-bar {
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background-color: $dark-grey;
+    top: 36px;
+    background: linear-gradient( #999, $dark-grey);
+}
+
+.vine {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 180px;
 }
 
 .skills {
@@ -53,12 +71,6 @@
 .skill-title {
     font-size: 1.2em;
     margin-bottom: 10px;
-}
-
-.fa-square {
-    font-size: .5em;
-    margin-right: 8px;
-    color: $grey;
 }
 
 .skills-dev {
@@ -103,7 +115,7 @@
     }
     .skills-con {
         @include row;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: start;
         padding-left: 40px;
         padding-right: 40px;
@@ -136,15 +148,15 @@
     .skills-con  {
         @include m-t-80;
         justify-content: space-evenly;
-        padding-bottom: 120px;
+        padding-bottom: 100px;
     }
     .skill-title { 
-        font-size: 1.5em;
-        padding-bottom: 5px;
-        border-bottom: $purple 2px solid;
+        //font-size: 1.5em;
+        padding-bottom: 10px;
+        border-bottom: $primary 1px solid;
     }
     .ul-con {
-        margin-top: 20px;
+        margin-top: 5px;
     }
     .skills-dev {
         .ul-con {

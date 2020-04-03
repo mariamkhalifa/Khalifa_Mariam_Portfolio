@@ -1,7 +1,7 @@
 #footer {
     @include column;
     align-items: center;
-    background-color: $purple;
+    background-color: $primary;
     padding: 15px 25px;
     position: relative;
     p { 
@@ -11,22 +11,23 @@
 }
 
 .social-media {
+    margin-top: 10px;
     @include row;
     a { 
         margin-right: 8px;
-        color: $blue;
+        color: $grey;
         transition: all ease .5s;
     }
     a:hover, a:focus {
         opacity: .9;
-        -webkit-transform: scale(.95);
-        -ms-transform: scale(.95);
-        transform: scale(.95);
+        -webkit-transform: scale(.97);
+        -ms-transform: scale(.97);
+        transform: scale(.97);
     }
 }
 
 .fa-chevron-up { 
-    color: $purple;
+    color: $primary;
     cursor: pointer;
     margin-top: 20px;
     position: absolute;
@@ -36,9 +37,9 @@
 }
 
 .fa-chevron-up:hover, .fa-chevron-up:focus {
-    -webkit-transform: scale(.92);
-    -ms-transform: scale(.92);
-    transform: scale(.92);
+    -webkit-transform: scale(.95);
+    -ms-transform: scale(.95);
+    transform: scale(.95);
     opacity: .8;
     text-shadow: 3px 2px 4px rgba($color: #000000, $alpha: .3);
 }

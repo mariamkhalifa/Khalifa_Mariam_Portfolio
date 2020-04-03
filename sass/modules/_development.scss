@@ -30,10 +30,10 @@
     transition: .5s all ease;
 }
 
-.project:hover {
-    -webkit-transform: scale(.97);
-    -ms-transform: scale(.97);
-    transform: scale(.97);
+.project:hover, .project:focus {
+    -webkit-transform: scale(.99);
+    -ms-transform: scale(.99);
+    transform: scale(.99);
 }
 
 .project-img {
@@ -67,7 +67,7 @@
     //padding: 20px;
     width: 80%;
     height: 80%;
-    background-color: rgba($color: black, $alpha: .7);
+    background-color: rgba($color: $primary, $alpha: .9);
     h3 { 
         color: white;
         font-size: 1.2em;
@@ -85,11 +85,11 @@
 }
 
 .dev-popover-outer:hover, .dev-popover-outer:focus {
-    animation: shrink-anim 1s backwards;
+    animation: shrink-anim .5s backwards;
     opacity: 1;
 }
 
-@media screen and (min-width:767px) {
+@media screen and (min-width:550px) {
     // .main-heading { 
     //     max-width: 300px 
     // }
@@ -105,10 +105,10 @@
         width: 60%;
         max-width: 500px;
         h3 {
-            font-size: 1.5em;
+            font-size: 1.2em;
         }
         ul > li {
-            font-size: 1.3em;
+            font-size: 1em;
         }
     }
     .animal-tracks {
