@@ -1,4 +1,11 @@
 <header id="main-header">
+    <!-- <img class="sky" src="images/sky.png"> -->
+    <!-- <picture>
+        <source srcset="images/mount.png" media="(min-width:900px)"> 
+        <img class="mount" src="images/mount-small.png">
+    </picture> -->
+    <img class="mount" src="images/mount.png">
+    
     <div class="header-border">
         <h2 class="hidden">Main header</h2>
         <i class="fas fa-bars fa-2x"></i>
@@ -9,21 +16,18 @@
             <li class="link"><a id="link-contact"  href="index.php#contact">Contact</a></li>
         </ul>
         <a href="index.php" class="link-home">
-            <picture class="logo">
-                <source media="(min-width: 767px)" srcset="images/logo-symbol.svg">
-                <img  src="images/logo-symbol.svg" alt="logo">
-            </picture>
+            <img  src="images/logo-symbol.svg" alt="logo">
         </a>
         <p class="welcome">
-            <span class="large">Hello,</span>
-            <span class="small">I'm a front-end developer</span>
-            <span class="small">This is my portfolio.</span>
+            <span class="large">Mariam Khalifa</span>
+            <span class="small">Front-End Developer</span>
+            <span class="small">and Digital Artist</span>
         </p>
         <ul class="dots">
             <li class="dot">.</li>
             <li class="dot">.</li>
             <li class="dot">.</li>
+            <li><i class="fas fa-chevron-down"></i></li>
         </ul>
-        <i class="fas fa-chevron-down fa-2x"></i>
     </div>
 </header>

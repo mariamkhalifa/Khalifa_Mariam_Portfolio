@@ -13,12 +13,14 @@
 <section id="about">
     <div class="about">
         <h2 class="main-heading">A little bit about me..</h2>
-        <p class="about-text"><span>Hi there!</span><br>I’m a 2nd-year interactive media design student at Fanshawe College, London, Ontario, about to graduate next April/2020. I'm a front-end developer who is in love with Javascript. As an honour-roll student, I have proven time management skills and teamwork ethic. 
+        <p class="about-text"><span>Hi there!</span><br>I’m an interactive media design graduate from Fanshawe College. I'm a front-end developer who is in love with Javascript. As an honour-roll student, I have proven time management skills and teamwork ethic. 
         Underneath my quiet nature is an adventurer, constantly seeking a new challenge. When I’m not working, you’ll find me reading or playing with my 2 little boys.</p>
-        <img class="about-img" src="images/mariam1.jpg" alt="mariam pic">
+        <!-- <img class="about-img" src="images/mariam1.jpg" alt="mariam pic"> -->
     </div>
         
     <div class="skills-con">
+        <div class="vine-bar"></div>
+        <img class="vine" src="images/vine.png" alt="">
         <div class="skills skills-m">
             <h3 class="skill-title">Motion Design Skills</h3>
             <ul class="ul-con">
@@ -66,6 +68,7 @@
         <h2 class="main-heading">Web Development Projects</h2>
 
         <div class="dev-projects">
+
             <a class="project" href="roku.php">
                 <img class="project-img" src="images/roku-mobile.png" alt="roku flashback project">
                 <div class="dev-popover-outer">
@@ -84,7 +87,7 @@
                 </div>
             </a>
 
-            <a class="project" href="kin.php">
+            <div class="project" data-target="kin.php">
                 <img class="project-img" src="images/kin-mobile.png" alt="keep it neutral project">
                 <div class="dev-popover-outer">
                     <div class="dev-popover-inner">
@@ -97,9 +100,9 @@
                         </ul>
                     </div>
                 </div>
-            </a>
+            </div>
 
-            <a class="project" href="mmp.php">
+            <div class="project" data-target="mmp.php">
                 <img class="project-img" src="images/mmp-mobile.png" alt="MMP project">
                 <div class="dev-popover-outer">
                     <div class="dev-popover-inner">
@@ -113,10 +116,10 @@
                         </ul>
                     </div>
                 </div>
-            </a>
+            </div>
 
-            <a class="project" href="index.php?id=7">
-                <img class="project-img" data-target="7" src="images/ON-summer-mobile.png" alt="Ontario summer project">
+            <div class="project" data-target="7">
+                <img class="project-img" src="images/ON-summer-mobile.png" alt="Ontario summer project">
                 <div class="dev-popover-outer">
                     <div class="dev-popover-inner">
                         <h3>Ontario Summer</h3>
@@ -128,10 +131,10 @@
                         </ul>
                     </div>
                 </div>
-            </a>
+            </div>
 
-            <a class="project red-fox" href="index.php?id=3">
-                <img class="project-img" data-target="3" src="images/red-fox-mobile.png" alt="red fox project">
+            <div class="project red-fox" data-target="3">
+                <img class="project-img" src="images/red-fox-mobile.png" alt="red fox project">
                 <div class="dev-popover-outer">
                     <div class="dev-popover-inner">
                         <h3>Red Fox</h3>
@@ -143,9 +146,9 @@
                         </ul>
                     </div>
                 </div>
-            </a>
+            </div>
 
-            <a data-target="5" ref="project" class="project" href="index.php?id=5">
+            <div class="project" data-target="5">
                 <img class="project-img" src="images/irobot-mobile.png" alt="irobot project">
                 <div class="dev-popover-outer">
                     <div class="dev-popover-inner">
@@ -159,10 +162,10 @@
                         </ul>
                     </div>
                 </div>
-            </a>
+            </div>
 
-            <a class="project" href="index.php?id=4">
-                <img class="project-img" data-target="4" src="images/imagina-mobile.png" alt="imagina project">
+            <div class="project" data-target="4">
+                <img class="project-img" src="images/imagina-mobile.png" alt="imagina project">
                 <div class="dev-popover-outer">
                     <div class="dev-popover-inner">
                         <h3>Imagina</h3>
@@ -174,25 +177,10 @@
                         </ul>
                     </div>
                 </div>
-            </a>
-        
-            <a class="project" href="index.php?id=6">
-                <img class="project-img" data-target="6" src="images/fav-things-mobile.png" alt="favourite things project">
-                <div class="dev-popover-outer">
-                    <div class="dev-popover-inner">
-                        <h3>Favourite Things</h3>
-                        <ul>
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>Node.js</li>
-                            <li>Ajax</li>
-                        </ul>
-                    </div>
-                </div>
-            </a>
+            </div>
 
-            <a class="project" href="index.php?id=2">
-                <img class="project-img" data-target="2" src="images/traa-mobile.png" alt="traa project">
+            <div class="project" data-target="2">
+                <img class="project-img" src="images/traa-mobile.png" alt="traa project">
                 <div class="dev-popover-outer">
                     <div class="dev-popover-inner">
                         <h3>TRAA</h3>
@@ -203,11 +191,11 @@
                         </ul>
                     </div>
                 </div>
-            </a>
+            </div>
         </div>
 
-        <a class="project animal-tracks" href="index.php?id=1">
-            <img data-target="1" src="images/animal-tracks-desktop.png" alt="animal tracks project">
+        <div class="project animal-tracks" data-target="1">
+            <img src="images/animal-tracks-desktop.png" alt="animal tracks project">
             <div class="dev-popover-outer">
                 <div class="dev-popover-inner">
                     <h3>Animal Tracks</h3>
@@ -218,12 +206,14 @@
                     </ul>
                 </div>
             </div>
-        </a>
+        </div>
     </div>
 </section>
 
 <section id="motion">
 <h2 class="main-heading">Motion Design Projects</h2>
+<div class="flower-bar"></div>
+<img class="hanging-flowers" src="images/hanging-flowers.png" alt="">
 <div class="motion-projects">
     <div class="thumbnail" data-target="demo-reel">
         <h2 class="thumb-title">Demo Reel 2019</h2>
@@ -288,49 +278,27 @@
 <section class="dev-lightbox">
     <a href="index.php"><img class="dev-logo" src="images/logo-symbol.svg" alt="logo"></a>
     <p class="close-dev-lightbox">X</p>
-    <?php
-    //include database and object files
-    include_once 'includes/config/database.php';
-    include_once 'includes/objects/project.php';
+    
+    <div class="project-con">
+            <h3 class="project-title"></h3>
+            <div class="dt-img-con">
+                <img class="dt-img" src="" alt="project desktop image">
+            </div>
+            <div class="desc">
+                <h4>Project Description:</h4>
+                <p class="project-desc"></p>
+                <h4>Team Members:</h4>
+                <p class="project-team"></p>
+            </div>
+            <div class="m-img">
+                <img class="m-img1" src="images/;?>" alt="project mobile image 1">
+                <img class="m-img2" src="images/;?>" alt="project mobile image 2">
+            </div>
 
-    // instantiate database and project object
-    $database = new Database();
-    $db = $database->getConnection();
-    $project = new Project($db);
-    $stmt = $project->getProjects();
-
-    if(isset($_GET['id'])) {
-        $stmt = $project->getProjectByID($_GET['id']);
-    }
-
-    $num = $stmt->rowCount();
-
-    if($num>0):?>
-    <?php while($row = $stmt->fetch(PDO::FETCH_ASSOC)):?>
-        <div class="project-con">
-                <h3 class="title"><?php echo $row['Name'];?></h3>
-                <div class="dt-img-con">
-                    <img class="dt-img" src="images/<?php echo $row['main_image'];?>" alt="project desktop image">
-                </div>
-                <div class="desc">
-                    <h4>Project Description:</h4>
-                    <p class="project-desc"><?php echo $row['Description'];?></p>
-                    <h4>Team Members:</h4>
-                    <p class="project-team"><?php echo $row['Team Members'];?></p>
-                </div>
-                <div class="m-img">
-                    <img src="images/<?php echo $row['image_1'];?>" alt="project mobile image 1">
-                    <img src="images/<?php echo $row['image_2'];?>" alt="project mobile image 2">
-                </div>
-        </div>
-        <?php endwhile;
-
-        else:?>
-            <h1>Uh Oh! Are you lost?</h1>
-            <div class="error-con"><a class="error-home" href="index.php">I'll help you find your way!</a></div>
-        <?php endif;?>
-
+            <img class="project-lavendar" src="images/lavendar-pot.png" alt="">
+    </div>
 </section>
+
 
 <?php include 'template/footer.php';?>
 </div>

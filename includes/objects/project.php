@@ -18,7 +18,11 @@ class Project{
 
         $stmt->execute();
         
-        return $stmt;
+        //$result = array();
+        while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+            $result = $row;
+        }
+        return $result;
     }
 
     public function getProjects(){

@@ -34,11 +34,11 @@ body {
 }
 
 h1, h2, h3, h4 {
-    color: $purple;
+    color: $primary;
 }
 
 p {
-    color: $grey;
+    color: $dark-grey;
     line-height: 1.5em;
     font-size: 0.9em;
 }
@@ -46,12 +46,12 @@ p {
 a {
     font-family: $font; 
     text-decoration: none;
-    color: $grey;
+    color: $dark-grey;
     cursor: pointer;
 }
 
 ul, li {
-    color: $grey;
+    color: $dark-grey;
     line-height: 1.5em;
     font-size: 0.9em;
 }
@@ -86,7 +86,7 @@ ul, li {
     }
 }
 
-@keyframes fade-anim {
+@keyframes fade {
     0% {
         opacity: 0;
     }
@@ -95,68 +95,68 @@ ul, li {
     }
 }
 
-@keyframes down-anim {
-    0% {
-        transform: translate(0, 0);
+// @keyframes img-fade-anim {
+//     0% {
+//         opacity: 1;
+//     }
+//     45% {
+//         opacity: 1;
+//     }
+//     55% {
+//         opacity: 0;
+//     }
+//     100% {
+//         opacity: 0;
+//     }
+// }
+
+@keyframes intro {
+    0% { 
+        -webkit-transform: scale(2);        
+        -ms-transform: scale(2);
+        transform: scale(2);
     }
-    100% {
-        transform: translate(0, 10px);
+    100% { 
+        -webkit-transform: scale(1);        
+        -ms-transform: scale(1);
+        transform: scale(1);
     }
 }
 
-@keyframes img-fade-anim {
+@keyframes rise {
     0% {
+        opacity: 0;
+        -webkit-transform: translateY(150px);        
+        -ms-transform: translateY(150px);
+        transform: translateY(150px);
+    }
+    50% {
         opacity: 1;
     }
-    45% {
+}
+
+@keyframes slide-down {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-5px);        
+        -ms-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+    50% {
         opacity: 1;
-    }
-    55% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 0;
     }
 }
 
 @keyframes shrink-anim {
     0% { 
-        -webkit-transform: scale(1.1); 
-        -ms-transform: scale(1.1); 
-        transform: scale(1.1);
+        -webkit-transform: scale(1.02); 
+        -ms-transform: scale(1.02); 
+        transform: scale(1.02);
     }
     100% { 
         -webkit-transform: scale(1); 
         -ms-transform: scale(1); 
         transform: scale(1); 
-    }
-}
-
-@keyframes wiggle-anim {
-    25% {
-        transform: rotate(1deg);
-        -webkit-transform: rotate(1deg);
-        -ms-transform: rotate(1deg);
-    }
-    50% {
-        transform: rotate(-1deg);
-        -webkit-transform: rotate(-1deg);
-        -ms-transform: rotate(-1deg);
-    }
-}
-
-@keyframes rotate-anim {
-    0% {
-       transform: rotate(0deg); 
-    }
-    25% {
-        transform: rotate(2deg); 
-    }
-    50% {
-        transform: rotate(0deg); 
-    }
-    100% {
-        transform: rotate(-2deg); 
     }
 }
 
@@ -166,5 +166,6 @@ ul, li {
 @import "modules/_about";
 @import "modules/_motion";
 @import "modules/_contact";
+@import "modules/_case";
 @import "modules/_submission";
 @import "modules/_footer";

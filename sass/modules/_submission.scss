@@ -1,6 +1,6 @@
 #submission-header {
     @include column;
-    background-color: $blue;
+    background-color: $secondary;
     height: 25vh;
     .link-home {
         width: 100px;
@@ -17,13 +17,13 @@
 .submission-con {
     @include column;
     align-items: center;
-    background-color: $blue;
+    background-color: $secondary;
     p {
         padding: 30px;
         text-align: center;
-        color: $purple;
+        color: $primary;
         font-size: 1em;
-        border: 3px solid $purple;
+        border: 3px solid $primary;
         border-radius: 5px;
     }
 }
