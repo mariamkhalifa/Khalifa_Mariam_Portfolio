@@ -69,7 +69,7 @@
 
         <div class="dev-projects">
 
-            <div class="project" data-target="roku.php">
+            <a class="project" href="roku.php">
                 <img class="project-img" src="images/roku-mobile.png" alt="roku flashback project">
                 <div class="dev-popover-outer">
                     <div class="dev-popover-inner">
@@ -85,7 +85,7 @@
                         </ul>
                     </div>
                 </div>
-            </div>
+            </a>
 
             <div class="project" data-target="kin.php">
                 <img class="project-img" src="images/kin-mobile.png" alt="keep it neutral project">
@@ -178,21 +178,6 @@
                     </div>
                 </div>
             </div>
-        
-            <div class="project" data-target="6">
-                <img class="project-img" src="images/fav-things-mobile.png" alt="favourite things project">
-                <div class="dev-popover-outer">
-                    <div class="dev-popover-inner">
-                        <h3>Favourite Things</h3>
-                        <ul>
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>Node.js</li>
-                            <li>Ajax</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
 
             <div class="project" data-target="2">
                 <img class="project-img" src="images/traa-mobile.png" alt="traa project">
@@ -227,6 +212,8 @@
 
 <section id="motion">
 <h2 class="main-heading">Motion Design Projects</h2>
+<div class="flower-bar"></div>
+<img class="hanging-flowers" src="images/hanging-flowers.png" alt="">
 <div class="motion-projects">
     <div class="thumbnail" data-target="demo-reel">
         <h2 class="thumb-title">Demo Reel 2019</h2>
@@ -307,12 +294,11 @@
                 <img class="m-img1" src="images/;?>" alt="project mobile image 1">
                 <img class="m-img2" src="images/;?>" alt="project mobile image 2">
             </div>
+
+            <img class="project-lavendar" src="images/lavendar-pot.png" alt="">
     </div>
-
-            <!-- <h1>Uh Oh! Are you lost?</h1>
-            <div class="error-con"><a class="error-home" href="index.php">I'll help you find your way!</a></div> -->
-
 </section>
+
 
 <?php include 'template/footer.php';?>
 </div>

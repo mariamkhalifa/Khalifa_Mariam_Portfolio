@@ -15,14 +15,15 @@
     margin-right: 30px;
 }
 
-.about-img {
-    max-width: 80%;
-    margin-top: 20px;
-}
+// .about-img {
+//     max-width: 80%;
+//     margin-top: 20px;
+// }
 
 .about-text {
-    padding: 40px 20px 20px 20px;
-    max-width: 80%;
+    //padding: 40px 20px 20px 20px;
+    margin-top: 60px;
+    max-width: 50%;
     span {
         font-size: 1.25em;
         line-height: 1.5em;
@@ -43,6 +44,7 @@
     position: absolute;
     height: 4px;
     width: 100%;
+    border-radius: 3px;
     background-color: $dark-grey;
     top: 36px;
     background: linear-gradient( #999, $dark-grey);
@@ -92,27 +94,27 @@
 }
 
 @media screen and (min-width: 767px) {
-    .about {
-        display: grid;
-        grid-template-areas: "h1 h1"
-                             "p img";
-        grid-gap: 40px;
-    }
-    .main-heading {
-        grid-area: h1;
-        text-align: center;
-        margin-right: auto;
-        margin-left: auto
-    }
-    .about-text {
-        grid-area: p;
-        padding: 0;
-        margin-left: auto;
-    }
-    .about-img {
-        grid-area: img;
-        margin-right: auto;
-    }
+    // .about {
+    //     display: grid;
+    //     grid-template-areas: "h1 h1"
+    //                          "p img";
+    //     grid-gap: 40px;
+    // }
+    // .main-heading {
+    //     grid-area: h1;
+    //     text-align: center;
+    //     margin-right: auto;
+    //     margin-left: auto
+    // }
+    // .about-text {
+    //     grid-area: p;
+    //     padding: 0;
+    //     margin-left: auto;
+    // }
+    // .about-img {
+    //     grid-area: img;
+    //     margin-right: auto;
+    // }
     .skills-con {
         @include row;
         justify-content: space-evenly;
@@ -142,11 +144,16 @@
 }
 
 @media screen and (min-width: 1100px) {
-    .about-text {
-        padding-right: 60px;
+    .main-heading {
+        margin-top: 100px; 
     }
+
+    // .about-text {
+    //     padding-right: 60px;
+    // }
+
     .skills-con  {
-        @include m-t-80;
+        margin-top: 100px;
         justify-content: space-evenly;
         padding-bottom: 100px;
     }

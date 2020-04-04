@@ -17,21 +17,46 @@
     top: 40px;
     right: 40px;
     cursor: pointer;
-    font-size: 2em;
+    font-size: 1.5em;
+    transition: all .5s ease;
+    animation: slide-down 1s backwards;
+    animation-delay: .3s;
+}
+
+.close-dev-lightbox:hover, .dev.close-dev-lightbox:focus {
+    -webkit-transform: scale(.97);
+    -ms-transform: scale(.97);
+    transform: scale(.97);
+    opacity: .8;
 }
 
 .dev-logo {
     position: absolute;
     top: 40px;
     left: 40px;
-    width: 70px;
+    width: 40px;
+    transition: all .5s ease;
+    animation: slide-down 1s backwards;
+    animation-delay: .3s;
+}
+
+.dev-logo:hover, .dev-logo:focus {
+    -webkit-transform: scale(.97);
+    -ms-transform: scale(.97);
+    transform: scale(.97);
+    opacity: .8;
 }
 
 .project-con {
     margin-top: 120px;
-    margin-bottom: 150px;
+    margin-bottom: 40px;
     @include column;
     align-items: center;
+    position: relative;
+    padding-bottom: 100px;
+    transition: all .5s ease;
+    animation: slide-down 1s backwards;
+    animation-delay: .3s;
 }
 
 .project-title { 
@@ -93,16 +118,11 @@
     border-radius: 5px;
 }
 
-.butterflies-con {
-    @include column;
-    //align-items: center;
-}
-
-.project-butterflies {
-    width: 150px;
-    margin-top: 20px; 
-    @include m-l-a;
-    @include m-r-a;
+.project-lavendar {
+    position: absolute;
+    width: 100px;
+    left: 20px;
+    top: 97%;
 }
 
 @media screen and (min-width: 767px) {

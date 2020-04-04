@@ -1,12 +1,30 @@
 #motion {
     opacity: 0;
     transition: all .5s ease;
-    @include m-t-80;
+    margin-top: 90px;
     @include column;
     margin-right: 50px;
     margin-left: 50px;
     align-items:  center;
-    border-top: 2px $primary solid;
+    //border-top: 2px $primary solid;
+    position: relative;
+}
+
+.flower-bar {
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    border-radius: 3px;
+    background-color: $dark-grey;
+    top: -60px;
+    background: linear-gradient( #999, $dark-grey);
+}
+
+.hanging-flowers {
+    position: absolute;
+    top: -70px;
+    right: 10px;
+    width: 70px;
 }
 
 .thumbnail {
@@ -18,6 +36,7 @@
 
 .thumb-img {
     transition: all .5s ease;
+    border-radius: 8px;
 }
 
 .thumb-img:hover, .thumb-img:focus {
@@ -94,5 +113,9 @@
         display: grid;
         grid-template-columns: repeat(2,1fr);
         grid-gap: 40px;
+    }
+
+    .hanging-flowers {
+        width: 90px;
     }
 }

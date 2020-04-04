@@ -16,10 +16,7 @@
             <li class="link"><a id="link-contact"  href="index.php#contact">Contact</a></li>
         </ul>
         <a href="index.php" class="link-home">
-            <picture class="logo">
-                <source media="(min-width: 767px)" srcset="images/logo-symbol.svg">
-                <img  src="images/logo-symbol.svg" alt="logo">
-            </picture>
+            <img  src="images/logo-symbol.svg" alt="logo">
         </a>
         <p class="welcome">
             <span class="large">Mariam Khalifa</span>
@@ -30,7 +27,7 @@
             <li class="dot">.</li>
             <li class="dot">.</li>
             <li class="dot">.</li>
+            <li><i class="fas fa-chevron-down"></i></li>
         </ul>
-        <i class="fas fa-chevron-down fa-2x"></i>
     </div>
 </header>

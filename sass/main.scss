@@ -95,29 +95,20 @@ ul, li {
     }
 }
 
-@keyframes down-anim {
-    0% {
-        transform: translate(0, 0);
-    }
-    100% {
-        transform: translate(0, 10px);
-    }
-}
-
-@keyframes img-fade-anim {
-    0% {
-        opacity: 1;
-    }
-    45% {
-        opacity: 1;
-    }
-    55% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 0;
-    }
-}
+// @keyframes img-fade-anim {
+//     0% {
+//         opacity: 1;
+//     }
+//     45% {
+//         opacity: 1;
+//     }
+//     55% {
+//         opacity: 0;
+//     }
+//     100% {
+//         opacity: 0;
+//     }
+// }
 
 @keyframes intro {
     0% { 
@@ -139,11 +130,20 @@ ul, li {
         -ms-transform: translateY(150px);
         transform: translateY(150px);
     }
-    50%{
+    50% {
         opacity: 1;
     }
-    100% {
-        
+}
+
+@keyframes slide-down {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-5px);        
+        -ms-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+    50% {
+        opacity: 1;
     }
 }
 
@@ -160,39 +160,12 @@ ul, li {
     }
 }
 
-@keyframes wiggle-anim {
-    25% {
-        transform: rotate(1deg);
-        -webkit-transform: rotate(1deg);
-        -ms-transform: rotate(1deg);
-    }
-    50% {
-        transform: rotate(-1deg);
-        -webkit-transform: rotate(-1deg);
-        -ms-transform: rotate(-1deg);
-    }
-}
-
-@keyframes rotate-anim {
-    0% {
-       transform: rotate(0deg); 
-    }
-    25% {
-        transform: rotate(2deg); 
-    }
-    50% {
-        transform: rotate(0deg); 
-    }
-    100% {
-        transform: rotate(-2deg); 
-    }
-}
-
 @import "modules/_header";
 @import "modules/_development";
 @import "modules/_project";
 @import "modules/_about";
 @import "modules/_motion";
 @import "modules/_contact";
+@import "modules/_case";
 @import "modules/_submission";
 @import "modules/_footer";
