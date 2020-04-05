@@ -29,8 +29,11 @@
             </p>
 
             <img class="case-img case-mobile" src="images/roku-mobile-users.png" alt="roku tablet">
-                
             <img class="case-img case-mobile" src="images/roku-mobile-film.png" alt="roku tablet">
+            <img class="case-img case-code" src="images/roku-code-users-comp.png" alt="code block">
+            <img class="case-img case-code" src="images/roku-code-film-comp.png" alt="code block">
+            <img class="case-img case-code" src="images/roku-code-index-php.png" alt="code block">
+            <img class="case-img case-code" src="images/roku-code-functions-php.png" alt="code block">
             
             <p class="case-text">The users have different permissions according to their admin status and whether they are kids or not. These are the different versions of the menu according to the type of user. The admin menu has the profile section where they can add users and access parental controls. The kids menu has only the Closed Captions and the language choices.
             </p>
@@ -42,6 +45,8 @@
 
             <p class="case-text">I used Vue Router to link to the different components. There is the landing page, sign up, log in, create user, all users, film dashboard, TV dashboard, audio dashboard and the selected media element, where the user would be able to rate, comment and share the media element on social media.
             </p>
+
+            <img class="case-img case-code" src="images/roku-code-routes-js.png" alt="code block">
 
             <div class="images-grid-desktop">
                 <img class="case-img case-mobile" src="images/roku-mobile-landing.png" alt="roku mobile">

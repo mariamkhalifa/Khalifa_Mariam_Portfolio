@@ -1,86 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" type="image/png" href="../../images/favicon.png">
-    <link href="https://fonts.googleapis.com/css?family=Manjari:700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Merienda+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../css/main.css">
-    <script src="https://kit.fontawesome.com/cfa5b23a00.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/ScrollToPlugin.min.js"></script>
-    <title>Form Submission\</title>
-</head>
-<body>
-<h1 class="hidden">Form Submission</h1>
-<header id="submission-header">
-    <i class="fas fa-bars fa-2x"></i>
-    <ul class="main-nav">
-        <a id="link-dev" href="../../index.php#development"><li>Web Development</li></a>
-        <a id="link-motion" href="../../index.php#motion"><li>Motion Design</li></a>
-        <a id="link-about" href="../../index.php#about"><li>About</li></a>
-        <a id="link-contact" href="../../index.php#contact"><li>Contact</li></a>
-    </ul>
-    <a href="../../index.php" class="link-home">
-        <picture class="logo">
-            <source media="(min-width: 767px)" srcset="../../images/logo.svg">
-            <img  src="../../images/logo-alt.svg" alt="logo">
-        </picture>
-    </a>
-</header>
-
-<div class="submission-con">
     
 <?php
 
 //IF THE FORM IS NOT FILLED OUT
-if(empty($_POST)){
-    echo 'Did you forget to fill out the form?';
-    exit;
+// if(empty($_POST)){
+//     echo 'Did you forget to fill out the form?';
+//     exit;
+// }
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    //VALIDATE ALL DATA
+    $name = '';
+    $email = '';
+    $subject = '';
+    $message = '';
+    $recipient = 'mariamkh2512@gmail.com';
+
+    if (isset($_POST['name'])) {
+        $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
+    }
+
+    if (isset($_POST['email'])) {
+        // if there's a line break in an email (it's very long), strip it out
+    $email = str_replace(array("\r", "\n", "%0a", "%0d"),'',$_POST['email']);
+    $email = filter_var($email,FILTER_VALIDATE_EMAIL);
+    }
+
+    if (isset($_POST['subject'])) {
+        $subject = filter_var($_POST['subject'], FILTER_SANITIZE_STRING);
+    }
+
+    if (isset($_POST['message'])) {
+        $message = $_POST['message']; 
+    }
+
+    //SEND OUT EMAIL
+    $headers = array(
+        'From'=>'no-reply@mariamkhalifa.ca',
+        'Reply-To'=>$name.'<'.$email.'>'
+    );
+
+    if(mail($recipient, $subject, $message, $headers)){
+    //if(mail($recipient, $subject, $message)){
+        $msg = 'Yay! Your email was sent! ^_^';
+    } else {
+        $msg = 'Nooo! Something went horribly wrong. Sorry! :(';
+    }
+
+} else {
+    // Not a POST request, set a 403 (forbidden) response code.
+    http_response_code(403);
+    $msg = 'There was a problem with your submission, please try again.';
 }
 
-//VALIDATE ALL DATA
-$name = '';
-$email = '';
-$subject = '';
-$message = '';
-$recipient = 'mariamkh2512@gmail.com';
-
-if (isset($_POST['name'])) {
-    $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
-}
-
-if (isset($_POST['email'])) {
-    // if there's a line break in an email (it's very long), strip it out
-   $email = str_replace(array("\r", "\n", "%0a", "%0d"),'',$_POST['email']);
-   $email = filter_var($email,FILTER_VALIDATE_EMAIL);
-}
-
-if (isset($_POST['subject'])) {
-    $subject = filter_var($_POST['subject'], FILTER_SANITIZE_STRING);
-}
-
-if (isset($_POST['message'])) {
-    $message = $_POST['message']; 
-}
-
-//SEND OUT EMAIL
-$headers = array(
-    'From'=>'no-reply@mariamkhalifa.ca',
-    'Reply-To'=>$name.'<'.$email.'>'
-);
-
-if(mail($recipient, $subject, $message, $headers)){
-//if(mail($recipient, $subject, $message)){
-    echo '<p>Yay! <br>Your email was sent.<br> ^_^</p>';
-}else{
-    echo '<p>Nooo! <br>Something went horribly wrong.<br> Sorry! :(</p>';
-}
+echo json_encode($msg);
 ?>
 
-<img class="sub-butterflies" src="../../images/butterflies.png" alt="butterflies">
+<!-- <img class="sub-butterflies" src="../../images/butterflies.png" alt="butterflies">
 </div>
 
 <footer id="footer">
@@ -94,4 +70,4 @@ if(mail($recipient, $subject, $message, $headers)){
 </footer>
 
 </body>
-</html>
+</html> -->
