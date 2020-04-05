@@ -30,6 +30,18 @@
     }
 }
 
+.resume-link {
+    text-decoration: underline;
+    transition: all ease .5s;
+}
+
+.resume-link:hover, .resume-link:focus {
+    -webkit-transform: scale(.97);
+    -ms-transform: scale(.97);
+    transform: scale(.97);
+    opacity: .8;
+}
+
 .skills-con {
     background-color: $grey;
     @include m-t-80;

@@ -14,8 +14,10 @@
     <div class="about">
         <h2 class="main-heading">A little bit about me..</h2>
         <p class="about-text"><span>Hi there!</span><br>I’m an interactive media design graduate from Fanshawe College. I'm a front-end developer who is in love with Javascript. As an honour-roll student, I have proven time management skills and teamwork ethic. 
-        Underneath my quiet nature is an adventurer, constantly seeking a new challenge. When I’m not working, you’ll find me reading or playing with my 2 little boys.</p>
-        <!-- <img class="about-img" src="images/mariam1.jpg" alt="mariam pic"> -->
+        Underneath my quiet nature is an adventurer, constantly seeking a new challenge. When I’m not working, you’ll find me reading or playing with my 2 little boys.
+        Feel free to checkout my resume
+        <a class="resume-link" href="documents/mariam-resume-developer.pdf">here.</a>
+        </p>
     </div>
         
     <div class="skills-con">
@@ -39,8 +41,6 @@
                 <li>Node.js</li>
                 <li>Vue.js</li>
                 <li>AJAX</li>
-            <!-- </ul>
-            <ul> -->
                 <li>Sass</li>
                 <li>Bootstrap</li>
                 <li>PHP</li>
@@ -102,7 +102,7 @@
                 </div>
             </a>
 
-            <a class="project" href="mmp.php">
+            <!-- <a class="project" href="mmp.php">
                 <img class="project-img" src="images/mmp-mobile.png" alt="MMP project">
                 <div class="dev-popover-outer">
                     <div class="dev-popover-inner">
@@ -116,7 +116,7 @@
                         </ul>
                     </div>
                 </div>
-            </a>
+            </a> -->
 
             <div class="project" data-target="7">
                 <img class="project-img" src="images/ON-summer-mobile.png" alt="Ontario summer project">
@@ -255,9 +255,8 @@
 
 <section id="contact">
     <h2 class="main-heading">Let's create together..</h2>
-    <p>You can use this contact form to get in touch. I'll get back to you within 2 business days. 
-    <br>Unless, of course, I am unable to do so!</p>
-    <form id="form" action="includes/contact/data_contact.php" method="post">
+    <p>You can use this contact form to get in touch. Whether it's for a project or just to say hi, I'll do my best to get back to you within 2 business days.</p>
+    <form id="form">
         <label for="u-name">Name:</label>
         <input id="u-name" type="text" name="name" placeholder="e.g. Harry Potter" required>
 
@@ -272,6 +271,8 @@
 
         <button class="submit-btn" type="submit">Submit</button>
     </form>
+
+    <div class="form-msg"></div>
     
 </section>
 
@@ -291,8 +292,8 @@
                 <p class="project-team"></p>
             </div>
             <div class="m-img">
-                <img class="m-img1" src="images/;?>" alt="project mobile image 1">
-                <img class="m-img2" src="images/;?>" alt="project mobile image 2">
+                <img class="m-img1" src="" alt="project mobile image 1">
+                <img class="m-img2" src="" alt="project mobile image 2">
             </div>
 
             <img class="project-lavendar" src="images/lavendar-pot.png" alt="">
@@ -303,10 +304,10 @@
 <?php include 'template/footer.php';?>
 </div>
 
-<script src="js/nav.js"></script>
+<!-- <script src="js/nav.js"></script> -->
 <script src="js/waypoints.js"></script>
-<script src="js/aboutImg.js"></script>
 <script src="js/lightbox.js"></script>
+<script src="js/contact.js"></script>
 <script src="js/project.js"></script>
 <script src="js/scrollTop.js"></script>
 
