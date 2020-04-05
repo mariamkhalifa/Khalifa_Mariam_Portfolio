@@ -87,7 +87,7 @@
                 </div>
             </a>
 
-            <div class="project" data-target="kin.php">
+            <a class="project" href="kin.php">
                 <img class="project-img" src="images/kin-mobile.png" alt="keep it neutral project">
                 <div class="dev-popover-outer">
                     <div class="dev-popover-inner">
@@ -100,9 +100,9 @@
                         </ul>
                     </div>
                 </div>
-            </div>
+            </a>
 
-            <div class="project" data-target="mmp.php">
+            <a class="project" href="mmp.php">
                 <img class="project-img" src="images/mmp-mobile.png" alt="MMP project">
                 <div class="dev-popover-outer">
                     <div class="dev-popover-inner">
@@ -116,7 +116,7 @@
                         </ul>
                     </div>
                 </div>
-            </div>
+            </a>
 
             <div class="project" data-target="7">
                 <img class="project-img" src="images/ON-summer-mobile.png" alt="Ontario summer project">

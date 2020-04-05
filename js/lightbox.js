@@ -10,7 +10,7 @@ function showLightbox(e) {
     //console.log('!!');
     lightbox.classList.add('show');
     //console.log(this.dataset.target);
-    video.src = `public/videos/${this.dataset.target}.mp4`;
+    video.src = `videos/${this.dataset.target}.mp4`;
     let thumbTitle = this.firstElementChild;
     videoTitle.textContent = thumbTitle.textContent;
 }
