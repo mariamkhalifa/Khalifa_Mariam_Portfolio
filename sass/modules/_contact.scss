@@ -6,12 +6,14 @@
     @include m-t-80;
     padding: 0 25px 250px 25px;
     background-color: $grey;
-    p {
-        width: 80%;
-        text-align: center;
-        margin-top: 20px;
-        max-width: 500px;
-    }
+    position: relative;
+}
+
+.contact-text {
+    width: 80%;
+    text-align: center;
+    margin-top: 20px;
+    max-width: 500px;
 }
 
 #form {
@@ -58,6 +60,30 @@
     -ms-transform: scale(.99);
     transform: scale(.99);
     box-shadow: 3px 2px 5px rgba($color: #000000, $alpha: .2);
+}
+
+.form-msg {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    background-color: $primary;
+    width: 60%;
+    height: 100px;
+    border-radius: 5px;
+    z-index: 20;
+    opacity: 1;
+    animation: fade-in-out 3s forwards;
+    transition: all .5s ease;
+    p {
+        color: $grey;
+        padding: 20px 40px;
+        border-radius: 5px;
+        border: 1px solid gray;
+    }
 }
 
 @media screen and (min-width: 1023px) {

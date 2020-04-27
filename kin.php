@@ -9,8 +9,8 @@
 <h1 class="hidden">Keep It Neutral Case Study</h1>
 
 <section class="case-study">
-    <a href="index.php"><img class="case-logo" src="images/logo-symbol.svg" alt="logo"></a>
-    <a class="close-case" href="index.php">X</a>
+    <a href="index.php#development"><img class="case-logo" src="images/logo-symbol.svg" alt="logo"></a>
+    <a class="close-case" href="index.php#development">X</a>
     <h2 class="main-heading">Keep It Neutral<span>Case Study</span></h2>
     
     <div class="case-con">
@@ -28,21 +28,21 @@
             
             <div class="case-desktop-con"><img src="images/kin-desktop.png" alt="roku desktop"></div>
 
-            <p class="case-text">My role as the front-end developer was to bring this beautiful and colourful design to life through a fully responsive website. I used HTML5, CSS3, Sass, Vue.js. Our back-end developer was to create a CMS for this website, so we had to use PHP and MySql, as well as Ajax. I also added a gulp.js file for image minification. I always make sure to follow accessibility standards when I'm writing HTML, like organizing the document outline and adding an alt tag for images.
+            <p class="case-text">My role as the front-end developer was to bring this beautiful and colourful design to life through a fully dynamic and responsive website where all content is pulled from a database. I used HTML5, CSS3, Sass, Vue.js, Ajax and Php. Our back-end developer was to create a CMS for this website. I also added a gulp.js file for image minification and CSS vendor prefixes. I always make sure to follow accessibility standards when I'm writing HTML, like organizing the document outline and adding an alt tag for images.
             </p>
     
             <div class="case-tablet-con"><img src="images/kin-tablet-home-long.png" alt="website image"></div>
             <div class="case-mobile-con"><img src="images/kin-mobile-home-long.png" alt="website image"></div>
             
-            <p class="case-text">The hero section contains elements form the campaign visuals. The messages and images change to engage the user and communicate more of the campaign messages. In order to achieve that I used CSS animations. The first set of hero images are styled in a grid that switches from 1 column in mobile to 2 columns in tablet to 3 columns in desktop. The challenge for me was figuring out how to position the second set of hero images using (position: absolute). The problem with using (position) is that elements are not part of the normal flow anymore, thus can’t be a part of the grid system or any other system. After multiple trials, I found the solution, which is to create another div for the second set of hero images and style them with grid just like the first group, then to wrap this second section in a div and position it absolutely on top of the first group of hero images. 
+            <p class="case-text">The hero section contains elements form the campaign visuals. The messages and images change to engage the user and communicate more of the campaign messages. In order to achieve that I used CSS animations. The first set of hero images are styled in a grid that switches from 1 column in mobile to 2 columns in tablet to 3 columns in desktop. The challenge for me was figuring out how to position the second set of hero images using (position: absolute). The problem with using (position) is that elements are not part of the normal flow anymore, thus can’t be a part of the grid system or any other system. After multiple trials, I found the solution, which is to create another div for the second set of hero images and style them with grid just like the first group, then to wrap this second section in a div and position it absolutely on top of the first group of hero images. Another challenge was creating the template for the hero component to be populated by the hero images and text array. The hero component consists of one image and one text element. I used CSS to switch from flex row to flex column to adapt to the changing layout of the hero images from mobile to tablet to desktop view. 
             </p>
                 
             <img class="case-img" src="images/kin-desktop-hero.png" alt="website image">
             <img class="case-img" src="images/kin-desktop-hero-animation.png" alt="website image">
 
-            <div class="case-code-con"><img src="images/kin-code-hero-html.png" alt="code block"></div>
+            <div class="case-img case-code"><img src="images/kin-code-hero-comp.png" alt="code block"></div>
+            <img class="case-img case-code" src="images/kin-code-all-hero-comp.png" alt="code block">
             <img class="case-img case-code" src="images/kin-code-hero-css.png" alt="code block">
-            <img class="case-img case-code" src="images/kin-code-hero-animation.png" alt="code block">
             <img class="case-img case-code" src="images/kin-code-hero-keyframes.png" alt="code block">
             
             <p class="case-text">The community page connects the users with the events happening in the community, as well as our Instagram feed. We want people to be able to talk and share their stories, so we created a form where the user can submit their anonymous story, which then would be shared through our social media channels.
@@ -50,7 +50,7 @@
 
             <div class="case-desktop-con"><img src="images/kin-desktop-community.png" alt="website image"></div>
 
-            <p class="case-text">Our contact page has the contact form,  social media links and contact info. We plan to add a section to download the campaign assets. This project should be done in a couple of weeks. Come and take a look to see how it turns out.
+            <p class="case-text">Our contact page has the contact form,  social media links and contact info. We plan to add a section to download the campaign assets.
             </p>
             
             <div class="case-desktop-con"><img src="images/kin-desktop-contact.png" alt="website image"></div>

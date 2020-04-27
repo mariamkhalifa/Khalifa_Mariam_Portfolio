@@ -147,6 +147,13 @@ ul, li {
     }
 }
 
+@keyframes fade-in-out {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
 @keyframes shrink-anim {
     0% { 
         -webkit-transform: scale(1.02); 
