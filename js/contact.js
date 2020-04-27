@@ -3,9 +3,13 @@ let form = document.querySelector('#form'),
     submitBtn = document.querySelector('.submit-btn'),
     formMsg = document.querySelector('.form-msg');
 
+function hideformMsg() {
+    formMsg.style.display = 'none';
+}
+
 function handleMail(e) {
     e.preventDefault();
-    console.log('!');
+    //console.log('!');
 
     let formdata = new FormData(form),
             maildata = {};
@@ -16,7 +20,8 @@ function handleMail(e) {
         maildata[key] = value;
     }
 
-    console.log(maildata);
+    //console.log(maildata);
+    //console.log(JSON.stringify(maildata));
 
     let url = './includes/contact/data_contact.php';
 
@@ -32,6 +37,9 @@ function handleMail(e) {
     .then(res => res.json())
     .then(data => {
         console.log(data);
+        formMsg.firstChild.textContent = data;
+        formMsg.style.display = 'flex';
+        setTimeout(hideformMsg, 4000);
     })
     .catch(err => console.log(err));
 } 

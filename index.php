@@ -16,7 +16,7 @@
         <p class="about-text"><span>Hi there!</span><br>I’m an interactive media design graduate from Fanshawe College. I'm a front-end developer who is in love with Javascript. As an honour-roll student, I have proven time management skills and teamwork ethic. 
         Underneath my quiet nature is an adventurer, constantly seeking a new challenge. When I’m not working, you’ll find me reading or playing with my 2 little boys.
         Feel free to checkout my resume
-        <a class="resume-link" href="documents/mariam-resume-developer.pdf">here.</a>
+        <a class="resume-link" href="documents/mariam-resume-developer.pdf" target="_blank">here.</a>
         </p>
     </div>
         
@@ -255,24 +255,24 @@
 
 <section id="contact">
     <h2 class="main-heading">Let's create together..</h2>
-    <p>You can use this contact form to get in touch. Whether it's for a project or just to say hi, I'll do my best to get back to you within 2 business days.</p>
-    <form id="form">
+    <p class="contact-text">You can use this contact form to get in touch. Whether it's for a project or just to say hi, I'll do my best to get back to you within 2 business days.</p>
+    <form id="form" action="includes/contact/data_contact.php" method="POST">
         <label for="u-name">Name:</label>
-        <input id="u-name" type="text" name="name" placeholder="e.g. Harry Potter" required>
+        <input id="u-name" type="text" name="name" value="" placeholder="e.g. Harry Potter" required>
 
         <label for="u-email">Email:</label>
-        <input id="u-email" type="email" name="email" placeholder="e.g. harry@hogwarts.edu" required>
+        <input id="u-email" type="email" name="email" value="" placeholder="e.g. harry@hogwarts.edu" required>
 
         <label for="u-subject">Subject:</label>
-        <input id="u-subject" type="text" name="subject" placeholder="e.g. Spells" required>
+        <input id="u-subject" type="text" name="subject" value="" placeholder="e.g. Spells" required>
 
         <label for="u-message">Message:</label>
-        <textarea id="u-message" name="message" Placeholder="I'd like to say..." rows="11" required></textarea>
+        <textarea id="u-message" name="message" value="" Placeholder="I'd like to say..." rows="11" required></textarea>
 
         <button class="submit-btn" type="submit">Submit</button>
     </form>
 
-    <div class="form-msg"></div>
+    <div class="form-msg"><p></p></div>
     
 </section>
 
